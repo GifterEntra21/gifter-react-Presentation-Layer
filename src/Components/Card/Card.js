@@ -14,6 +14,7 @@ function Card({title,imageurl,body, link}) {
                 </div>
                 <div className="card-body">
                     <p>{body}</p>
+                    
                 </div>
             </div>
 
