@@ -8,10 +8,10 @@ export default function Header() {
             <nav>
                 <ul>
 
-                    <li><a href="#"><img src={logo} alt="AAAAAAAAAAAAAAAAAAAAAAAA" /></a></li>
+                    <li><a href="/"><img src={logo} alt="logo.png" /></a></li>
                     <ul>
-                        <li><a href="#">Presentear</a></li>
-                        <li><a href="#">Sobre</a></li>
+                        <li><a href="/presente" className="style">Categorias</a></li>
+                        <li><a href="/sobre" className="style">Sobre nós</a></li>
                     </ul>
                 </ul>
             </nav>
