@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.rectangle {
+    background-color: #f6cdc9;
+    max-width: 100vw;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.title {
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: inter;
+    color: #ca234e;
+    max-width: fit-content;
+
+}
+
+.iconP {
+    color: #ca234e;
+    font-family: inter;
+    font-size: medium;
+    max-width: 220px;
+    display: flex;
+
+
+}
+
+.iconL {
+    color: #ca234e;
+    font-family: inter;
+    font-size: medium;
+    max-width: 200px;
+    display: flex;
+
+
+}
+
+.iconS {
+    color: #ca234e;
+    font-family: inter;
+    font-size: medium;
+    max-width: 170px;
+    display: flex;
+
+}
+
+
+.iconsWrapper {
+    display: flex;
+    gap: 10rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconsWrapper>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
