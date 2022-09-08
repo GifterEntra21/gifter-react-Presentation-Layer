@@ -1,14 +1,15 @@
 import React from "react";
 import Card from "../Components/Card/Card";
+import style from "./Presente.module.css"
 import Header from "../Components/Header/Header";
 
 export default function Presente() {
     return (
 
-        <div classname='app'>
-
+        <div className={style.wrapper}>
             <Header />
-            <div className='wrapper'>
+
+            <div className={style.cardWrapper}>
                 <Card title='Luminaria One Piece'
                     imageurl='https://m.media-amazon.com/images/I/81fvNmmrd3L._AC_SX522_.jpg'
                     body='Luminaria LED 3D, com 7 cores. Inclui: Cabo USB, uma base e uma luminária.'

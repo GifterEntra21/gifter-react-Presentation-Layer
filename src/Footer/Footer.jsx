@@ -13,7 +13,7 @@ export default function Footers() {
     const linkVitorA = "https://br.linkedin.com/in/vitor-pfiffer";
     const linkVitorH = "https://br.linkedin.com/in/vitorfauste";
     const linkMarco = "https://br.linkedin.com/in/marcoantoniofurtado";
-    const linkGitHub ="https://github.com/GifterEntra21/Gifter";
+    const linkGitHub = "https://github.com/GifterEntra21";
     const icons = { color: "white", fontSize: 60 }
     const hub = { color: "white", fontSize: 190 }
     return (
@@ -28,7 +28,7 @@ export default function Footers() {
 
                 <div className={styles.photoMembers}>
 
-                    <a href={linkMarco}target="_blank"><img src={Marco} /></a>
+                    <a href={linkMarco} target="_blank"><img src={Marco} /></a>
                     <div className={styles.iconsC}>
                         <TiSocialLinkedin style={icons} />
                     </div>
@@ -59,14 +59,12 @@ export default function Footers() {
                     <div className={styles.names}>
                         <h5>Vitor H.</h5>
                     </div>
-
                     <div className={styles.git}>
-                      <a href={linkGitHub} target="_blank"><AiFillGithub style={hub} /></a>  
+                        <a href={linkGitHub} target="_blank"><AiFillGithub style={hub} /></a>
                         <DiGithubFull style={hub} />
                     </div>
-
-                    <div className={styles.line} />
                 </div>
+
             </div>
         </footer>
     )

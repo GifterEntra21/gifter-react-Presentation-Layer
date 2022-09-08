@@ -46,11 +46,11 @@ nav a{
     text-transform: capitalize;
 }
 
-.style{
+.pages{
     margin-top: 0.5rem;
 }
 
-nav .style:before {
+nav .pages:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -66,7 +66,7 @@ nav .style:before {
     transition: all 0.3s ease-in-out 0s;
 }
 
-nav .style:hover:before {
+nav .pages:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);

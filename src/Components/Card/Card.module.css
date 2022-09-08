@@ -1,0 +1,73 @@
+.Container {
+  width: fit-content;
+  transition: all 1.5s;
+  height: fit-content;
+  overflow: hidden;
+  display: flex;
+}
+
+.Content {
+  float: left;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 240px;
+  height: 320px;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 0 0 3px 0 rgb(0, 0, 0);
+  transition: all 0.3s;
+}
+
+.Content:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 11px 14px rgb(0 0 0 / 25%), 0 8px 20px rgb(0 0 0 / 10%);
+}
+
+.Image {
+  display: block;
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+}
+
+.Content img {
+  width: 100%;
+}
+
+.Mega {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 110px;
+  padding: 10px 20px;
+}
+
+.Mega>.Title {
+  padding: 0;
+  margin: 10px 0;
+  font-size: 22px;
+  color: #ff7402;
+}
+
+.Mega>.Body {
+  font-size: 13px;
+  text-align: center;
+  color: #373737;
+}
+
+@media screen and (max-width:1124px) {
+  .Container {
+    width: auto;
+    height: auto;
+  }
+}
+
+@media screen and (max-width:562px) {
+  .Container {
+    width: auto;
+    height: auto;
+  }
+}
