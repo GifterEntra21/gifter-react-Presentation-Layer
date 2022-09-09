@@ -71,3 +71,55 @@ nav .pages:hover:before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
+
+@media screen and (max-width:414px) {
+    nav{
+        width: 100%;
+        background-color: none;
+        overflow: hidden;
+        margin-left: 0rem;
+        margin-right: 0rem;
+    
+    }
+
+    li > a > img {
+        max-height: 2rem;
+        max-width: 6rem;
+        color: rgb(255, 255, 255);
+    }
+
+    nav a{
+        padding: 20px 0.2px;
+        width: fit-content;
+        font-size: 12px;
+    }
+    .pages{
+        margin-left: -1px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    nav{
+        width: 100%;
+        background-color: none;
+        overflow: hidden;
+        margin-left: 0rem;
+        margin-right: 0rem;
+    
+    }
+
+    li > a > img {
+        max-height: 2rem;
+        max-width: 6rem;
+        color: rgb(255, 255, 255);
+    }
+
+    nav a{
+        padding: 20px 0.2px;
+        width: fit-content;
+        font-size: 12px;
+    }
+    .pages{
+        margin-left: -1px;
+    }
+}

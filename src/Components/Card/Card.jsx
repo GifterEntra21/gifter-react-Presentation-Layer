@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './Card.module.css'
 
 
-function Card({ title, imageurl, body, link }) {
+function Card({ title, imageurl }) {
     return (
         <div className={styles.Container}>
             <div className={styles.Content}>
@@ -14,10 +14,7 @@ function Card({ title, imageurl, body, link }) {
                     <div className={styles.Title}>
                         <h3>{title}</h3>
                     </div>
-                    <div className={styles.Body}>
-                        <p>{body}</p>
 
-                    </div>
                 </div>
             </div>
         </div>
