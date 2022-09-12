@@ -15,19 +15,22 @@ export default function Footers() {
     const linkMarco = "https://br.linkedin.com/in/marcoantoniofurtado";
     const linkGitHub = "https://github.com/GifterEntra21";
     const icons = { color: "white", fontSize: 60 }
-    const hub = { color: "white", fontSize: 190 }
+    const hub = { color: "white", fontSize: 170 }
     return (
 
         <footer>
 
             <div className={styles.innerFooter}>
 
+                <div id="bottom">
                 <div className={styles.title}>
                     Sobre nós
                 </div>
 
-                <div className={styles.photoMembers}>
+                </div>
 
+                <div className={styles.photoMembers}>
+                    
                     <a href={linkMarco} target="_blank"><img src={Marco} /></a>
                     <div className={styles.iconsC}>
                         <TiSocialLinkedin style={icons} />

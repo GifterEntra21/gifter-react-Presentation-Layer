@@ -10,7 +10,7 @@
 .title {
     font-weight: 700;
     font-family: inter;
-    font-size:2rem;
+    font-size: 2rem;
     margin-left: 3rem;
     margin-bottom: 1rem;
     padding-top: 6rem;
@@ -37,7 +37,7 @@
     margin-bottom: 0.5rem;
 }
 
-button {
+.button {
     border-radius: 8px;
     border: none;
     background-color: #e20f46;
@@ -46,10 +46,14 @@ button {
     color: white;
     padding: 13px;
     font-family: inter;
-
+    transition: all ease 0.5s;
 }
 
-input {
+.button:hover {
+    transform: scale(1.1);
+}
+
+.input {
     border-radius: 8px;
     border-color: rgb(255, 255, 255);
     padding: 12px;
@@ -72,13 +76,13 @@ input {
     .title {
         font-weight: 700;
         font-family: inter;
-        font-size:25px;
+        font-size: 25px;
         color: white;
         max-width: 240px;
         margin-left: 1.5rem;
     }
-    
-    
+
+
     .text {
         color: white;
         font-style: inter;
@@ -87,7 +91,7 @@ input {
         font-size: 15px;
         max-width: 200px;
     }
-    
+
     .amount {
         color: white;
         font-style: inter;
@@ -98,8 +102,8 @@ input {
         top: 1rem;
         margin-bottom: 0.5rem;
     }
-    
-    button {
+
+    .button {
         border-radius: 8px;
         border: none;
         background-color: #e20f46;
@@ -109,10 +113,10 @@ input {
         font-family: inter;
         position: relative;
         top: 1rem;
-    
+
     }
-    
-    input {
+
+    .input {
         border-radius: 8px;
         border-color: rgb(255, 255, 255);
         padding: 13px;
@@ -122,7 +126,7 @@ input {
         position: relative;
         top: 1rem;
     }
-    
+
     .photo {
         display: none;
     }

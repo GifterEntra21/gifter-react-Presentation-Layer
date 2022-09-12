@@ -3,7 +3,7 @@
 .rectangle {
     background-color: #f6cdc9;
     max-width: 100vw;
-    height: 30rem;
+    padding: 2.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,7 +21,7 @@
 
 }
 
-.iconP {
+.textP {
     color: #ca234e;
     font-family: inter;
     font-size: medium;
@@ -31,7 +31,7 @@
 
 }
 
-.iconL {
+.textL {
     color: #ca234e;
     font-family: inter;
     font-size: medium;
@@ -41,7 +41,7 @@
 
 }
 
-.iconS {
+.textS {
     color: #ca234e;
     font-family: inter;
     font-size: medium;
@@ -76,7 +76,7 @@
         max-width: fit-content;
     }
 
-    .iconP {
+    .textP {
         color: #ca234e;
         font-family: inter;
         font-size: 11px;
@@ -86,7 +86,7 @@
 
     }
 
-    .iconL {
+    .textL {
         color: #ca234e;
         font-family: inter;
         font-size: 11px;
@@ -96,7 +96,7 @@
 
     }
 
-    .iconS {
+    .textS {
         color: #ca234e;
         font-family: inter;
         font-size: 11px;
@@ -107,6 +107,7 @@
     .iconsWrapper {
         display: flex;
         gap: 1rem;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }

@@ -20,8 +20,8 @@ export default function Home() {
                 <h5 className={styles.amount}>
                     Qual o link do perfil do presenteado?
                 </h5>
-                <input placeholder='Instagram.com/giftersolutions' />
-                <button>Descobrir</button>
+                <input placeholder='Instagram.com/giftersolutions'  className={styles.input}/>
+                <button className={styles.button}>Descobrir</button>
             </div>
             <div className={styles.photo}>
                 <img src={simbolo} alt="present.png" />

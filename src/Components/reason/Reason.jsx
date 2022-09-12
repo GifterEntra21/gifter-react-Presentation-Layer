@@ -17,21 +17,21 @@ export default function reasons() {
 
                 <div>
                     <AiOutlineGift style={icons} className={style.present} />
-                    <h5 className={style.iconP} >
+                    <h5 className={style.textP} >
                         Recomendações precisas sobre qual item comprar para a pessoa.
                     </h5>
                 </div>
 
                 <div>
                     <AiOutlineUnorderedList style={icons} className={style.list} />
-                    <h5 className={style.iconL}>
+                    <h5 className={style.textL}>
                         Uma lista com diversas opções para você escolher.
                     </h5>
                 </div>
 
                 <div>
                     <AiOutlineStar style={icons} className={style.star} />
-                    <h5 className={style.iconS}>
+                    <h5 className={style.textS}>
                         Presentes mais personalizados de acordo com cada perfil.
                     </h5>
                 </div>
