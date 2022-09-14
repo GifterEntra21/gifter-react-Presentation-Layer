@@ -166,3 +166,33 @@
         margin-bottom: 9rem;
     }
 }
+
+@media screen and (width:1024px) {
+    .photo {
+        display: flex;
+        position: relative;
+        right: 22rem;
+        bottom: 4rem;
+        width: auto;
+        height: 600px;
+    }
+
+    .input{
+        margin-bottom: 8rem;
+    }
+}
+
+@media screen and (width:1280px) {
+    .photo {
+        display: flex;
+        position: relative;
+        right: 16rem;
+        bottom: -2rem;
+        width: auto;
+        height: 700px;
+    }
+
+    .input{
+        margin-bottom: 1rem;
+    }
+}

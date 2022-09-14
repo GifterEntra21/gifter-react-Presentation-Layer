@@ -68,7 +68,7 @@
     .innerFooter {
         background-color: #ff712f;
         max-width: 100vw;
-        height: fit-content;
+        height: 40vh;
         display: flex;
         flex-direction: column;
     }
@@ -84,23 +84,23 @@
     
 
     .photoMembers {
-        width: 300px;
+        width: 100px;
         height: fit-content;
-        align-items: center;
+        align-items: left;
         display: flex;
         position: relative;
         top: -4rem;
         gap: 1px;
-        column-gap: 1px;
-        flex-wrap: wrap;
 
     }
 
     .photoMembers>a>img{
-        width: 60px;
-        height: 60px;
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
         display: flex;
+        position: relative;
+        right: 4.5rem;
     }
 
     .names {
@@ -111,8 +111,8 @@
         color: rgb(255, 255, 255);
         font-size:13px;
         position: relative;
-        top: -1.1rem;
-        left: -4.4rem;
+        top: -2rem;
+        left: -8.7rem;
     }
     
     .iconsC {
@@ -124,14 +124,15 @@
         border-radius: 50%;
         background-color: #007bad;
         position: relative;
-        top: 2rem;
-        right: 2rem;
+        top: 1rem;
+        right: 6rem;
     }
     
     .git{
         display: flex;
         position: relative;
-        left: -3.7rem;
+        right: 32rem;
+        top: 10rem;
     }
 }
 
@@ -229,6 +230,93 @@
         display: flex;
         position: relative;
         left: -36rem;
+        top: 12rem;
+    }
+}
+
+@media screen and (width:1280px) {
+    .innerFooter {
+        background-color: #ff712f;
+        max-width: 100vw;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .photoMembers>a>img{
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .names {
+        width: max-content;
+        height: fit-content;
+        display: flex;
+        white-space: nowrap;
+        color: rgb(255, 255, 255);
+        font-size:15px;
+        position: relative;
+        top: -1.1rem;
+        left: -7.4rem;
+    }
+
+    .iconsC {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: #007bad;
+        position: relative;
+        top: 1.5rem;
+        right: 2.4rem;
+    }
+    
+    .git{
+        display: flex;
+        position: relative;
+        right: 37rem;
+        top: 12rem;
+    }
+}
+
+@media screen and (width:1024px) {
+    .innerFooter {
+        height: 80vh;
+    }
+
+    .photoMembers>a>img{
+        width: 90px;
+        height: 90px;
+    }
+
+    .names {
+        width: max-content;
+        height: fit-content;
+        display: flex;
+        white-space: nowrap;
+        color: rgb(255, 255, 255);
+        font-size:15px;
+        position: relative;
+        top: 0.1rem;
+        left: -8.3rem;
+    }
+
+    .iconsC {
+        top: 2.5rem;
+        right: 3rem;
+    }
+    
+    .git{
+        display: flex;
+        position: relative;
+        right: 37rem;
         top: 12rem;
     }
 }
