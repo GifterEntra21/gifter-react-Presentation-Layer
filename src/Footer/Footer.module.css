@@ -64,11 +64,13 @@
     align-items: center;
 }
 
+
+
 @media screen and (max-width:414px) {
     .innerFooter {
         background-color: #ff712f;
         max-width: 100vw;
-        height: 40vh;
+        height: 42vh;
         display: flex;
         flex-direction: column;
     }
@@ -84,23 +86,23 @@
     
 
     .photoMembers {
-        width: 100px;
+        width: 300px;
         height: fit-content;
-        align-items: left;
+        align-items: center;
         display: flex;
         position: relative;
-        top: -4rem;
-        gap: 1px;
-
+        bottom: 4rem;
+        gap: 10px;
     }
 
     .photoMembers>a>img{
-        width: 40px;
-        height: 40px;
+        width: 45px;
+        height: 45px;
         border-radius: 50%;
         display: flex;
         position: relative;
-        right: 4.5rem;
+        margin-right: -5.5rem;
+        margin-left: -2.4rem;
     }
 
     .names {
@@ -112,12 +114,12 @@
         font-size:13px;
         position: relative;
         top: -2rem;
-        left: -8.7rem;
+        left: -4.7rem;
     }
     
     .iconsC {
-        width: 25px;
-        height: 25px;
+        width: 22px;
+        height: 22px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -125,13 +127,13 @@
         background-color: #007bad;
         position: relative;
         top: 1rem;
-        right: 6rem;
+        right: 1.5rem;
     }
     
     .git{
         display: flex;
         position: relative;
-        right: 32rem;
+        right: 26rem;
         top: 10rem;
     }
 }
@@ -318,5 +320,66 @@
         position: relative;
         right: 37rem;
         top: 12rem;
+    }
+}
+
+@media screen and (width:375px) {
+    .innerFooter {
+        height: 56vh;
+    }
+
+    .photoMembers>a>img{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        display: flex;
+        position: relative;
+        margin-right: -5.5rem;
+        margin-left: -3rem;
+    }
+
+    .names {
+        width: max-content;
+        height: fit-content;
+        display: flex;
+        white-space: nowrap;
+        color: rgb(255, 255, 255);
+        font-size:13px;
+        position: relative;
+        top: -2rem;
+        left: -5.2rem;
+    }
+    
+    .iconsC {
+        width: 22px;
+        height: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: #007bad;
+        position: relative;
+        top: 1rem;
+        right: 1.8rem;
+    }
+    
+    .git{
+        display: flex;
+        position: relative;
+        right: 27rem;
+        top: 10rem;
+        
+    }
+}
+
+@media screen and (width:393px) {
+    .innerFooter {
+        height: 44vh;
+    }
+}
+
+@media screen and (width:390px) {
+    .innerFooter {
+        height: 44vh;
     }
 }
