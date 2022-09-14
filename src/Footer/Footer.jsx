@@ -22,7 +22,7 @@ export default function Footers() {
 
             <div className={styles.innerFooter}>
 
-                <div id="bottom">
+                <div id="footer">
                 <div className={styles.title}>
                     Sobre nós
                 </div>
