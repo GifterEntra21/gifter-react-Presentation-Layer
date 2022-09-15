@@ -156,7 +156,7 @@
         display: flex;
         position: relative;
         top: 1px;
-        right: 26rem;
+        right: 27rem;
         width: auto;
         height: 500px;
 
@@ -194,5 +194,148 @@
 
     .input{
         margin-bottom: 1rem;
+    }
+}
+
+@media screen and (width:912px) {
+    .photo {
+        display: flex;
+        position: relative;
+        right: 30rem;
+        bottom: -2rem;
+        width: auto;
+        height: 700px;
+    }
+
+    .input{
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (width:540px) {
+    .photo {
+        display: none;
+    }
+
+    .input {
+        position: relative;
+        top: 3rem
+    }
+
+    .amount {
+        top: 2rem;
+    }
+
+    .button {
+        top: 3rem;
+    }
+}
+
+@media screen and (width:1114px) {
+    .photo {
+        position: relative;
+        left: -20rem;
+        top: 3rem;
+    }
+}
+
+@media screen and (width:717px) {
+    .photo {
+        display: none;
+    }
+
+    .amount {
+        position: relative;
+        top: 3rem;
+    }
+
+    .input {
+        position: relative;
+        top: 3.5rem;
+    }
+
+    .button {
+        position: relative;
+        top: 3.5rem;
+    }
+}
+
+@media screen and (width:360px) {
+    .amount {
+        width: fit-content;
+    }
+}
+
+@media screen and (width:425px) {
+    .title {
+        font-weight: 700;
+        font-family: inter;
+        font-size: 25px;
+        color: white;
+        max-width: 240px;
+        margin-left: 1.5rem;
+    }
+
+
+    .text {
+        color: white;
+        font-style: inter;
+        margin-left: 1.5rem;
+        margin-top: 2rem;
+        font-size: 15px;
+        max-width: 200px;
+    }
+
+    .amount {
+        color: white;
+        font-style: inter;
+        font-weight: 400;
+        font-size: 13px;
+        margin-left: 1.5rem;
+        position: relative;
+        top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .button {
+        border-radius: 8px;
+        border: none;
+        background-color: #e20f46;
+        margin-left: 10px;
+        color: white;
+        padding: 15px;
+        font-family: inter;
+        position: relative;
+        top: 1rem;
+
+    }
+
+    .input {
+        border-radius: 8px;
+        border-color: rgb(255, 255, 255);
+        padding: 13px;
+        width: 229px;
+        margin-left: 1.5rem;
+        font-family: inter;
+        position: relative;
+        top: 1rem;
+    }
+
+    .photo {
+        display: none;
+    }
+}
+
+@media screen and (width:320px) {
+    .button {
+        position: relative;
+        top: 2rem;
+        margin-left: 1.5rem;
+        width: 280px;
+    }
+
+    .input {
+        position: relative;
+        width: 280px;
     }
 }

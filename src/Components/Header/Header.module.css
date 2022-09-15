@@ -123,3 +123,9 @@ nav .pages:hover:before {
         margin-left: -1px;
     }
 }
+
+@media screen and (width: 320px){
+    nav a{
+        white-space: nowrap;
+    }
+}
