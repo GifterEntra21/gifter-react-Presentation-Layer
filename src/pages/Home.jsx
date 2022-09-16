@@ -1,7 +1,14 @@
 import styles from './Home.module.css';
 import simbolo from "../images/simbolo.png";
+import axios from 'axios';
 
 export default function Home() {
+    axios.post("https://localhost:7008/api/Auth/login",
+        {
+            "username":'string',
+            "password":'string'
+        }
+    ).then(response=>console.log(response.data)).catch(error=>console.log(error))
     return (
         <div className={styles.wrapper}>
             <div>
@@ -20,7 +27,7 @@ export default function Home() {
                 <h5 className={styles.amount}>
                     Qual o link do perfil do presenteado?
                 </h5>
-                <input placeholder='Instagram.com/giftersolutions'  className={styles.input}/>
+                <input placeholder='instagram.com/giftersolutions'  className={styles.input}/>
                 <button className={styles.button}>Descobrir</button>
             </div>
             <div className={styles.photo}>

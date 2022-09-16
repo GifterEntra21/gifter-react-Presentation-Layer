@@ -339,3 +339,10 @@
         width: 280px;
     }
 }
+
+@media screen and (width:1366px) {
+    .photo{
+        position: relative;
+        right: 4rem;
+    }
+}

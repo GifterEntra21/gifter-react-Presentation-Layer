@@ -25,7 +25,7 @@
     color: #ca234e;
     font-family: inter;
     font-size: medium;
-    max-width: 220px;
+    max-width: 200px;
     display: flex;
 
 
@@ -42,12 +42,12 @@
 }
 
 .textS {
+    position: relative;
     color: #ca234e;
     font-family: inter;
     font-size: medium;
-    max-width: 170px;
+    max-width: 190px;
     display: flex;
-
 }
 
 
@@ -57,7 +57,20 @@
     justify-content: center;
     align-items: center;
 }
+.iconsWrapper .PP{
+    position: relative;
+    top: -0.8rem;
+}
 
+.iconsWrapper .MH{
+    position: relative;
+    top: -0.8rem;
+}
+
+.iconsWrapper .ST{
+    position: relative;
+    top: -0.5rem;
+}
 .iconsWrapper>div {
     display: flex;
     flex-direction: column;

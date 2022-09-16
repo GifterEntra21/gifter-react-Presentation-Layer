@@ -15,24 +15,24 @@ export default function reasons() {
             </div>
             <div className={style.iconsWrapper}>
 
-                <div>
+                <div className={style.PP}>
                     <AiOutlineGift style={icons} className={style.present} />
                     <h5 className={style.textP} >
-                        Recomendações precisas sobre qual item comprar para a pessoa.
+                        Recomendações precisas para o presente correto.
                     </h5>
                 </div>
 
-                <div>
+                <div className={style.MH}>
                     <AiOutlineUnorderedList style={icons} className={style.list} />
                     <h5 className={style.textL}>
                         Uma lista com diversas opções para você escolher.
                     </h5>
                 </div>
 
-                <div>
+                <div className={style.ST}>
                     <AiOutlineStar style={icons} className={style.star} />
                     <h5 className={style.textS}>
-                        Presentes mais personalizados de acordo com cada perfil.
+                        Presentes personalizados de acordo com cada perfil.
                     </h5>
                 </div>
             </div>

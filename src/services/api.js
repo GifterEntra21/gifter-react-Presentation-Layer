@@ -1,4 +1,4 @@
-import axios from "axios";
+/*import axios from "axios";
 api.defaults.headers.authorization = `Bearer ${token}`;
 
 const api = axios.create({
@@ -6,13 +6,13 @@ const api = axios.create({
 });
 
 api.interceptors.request.use(async config => {
-    const token = `Bearer ${token}`;
-  
+    const token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9";
+
     if (token) {
       api.defaults.headers.authorization = `Bearer ${token}`;
     }
-  
+    
     return config;
 });
 
-export default api;
+export default api;*/
