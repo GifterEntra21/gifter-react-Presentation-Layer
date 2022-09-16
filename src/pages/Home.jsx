@@ -1,6 +1,5 @@
 import styles from './Home.module.css';
 import simbolo from "../images/simbolo.png";
-import api from "../../public/api"
 
 export default function Home() {
     return (

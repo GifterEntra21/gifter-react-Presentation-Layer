@@ -241,6 +241,7 @@
 }
 
 @media screen and (width:320px) {
+    
     .title {
         white-space: nowrap;
     }

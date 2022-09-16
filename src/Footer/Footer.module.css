@@ -675,6 +675,7 @@
     }
 
     .title {
+        width: fit-content;
         margin-left: 1rem;
         margin-top: 2rem;
         color: white;
@@ -685,7 +686,7 @@
     
 
     .photoMembers {
-        width: 300px;
+        width: 100px;
         height: fit-content;
         align-items: center;
         display: flex;
@@ -712,7 +713,7 @@
         font-size:13px;
         position: relative;
         top: -2.4rem;
-        left: -7.2rem;
+        left: -6.8rem;
     }
     
     .iconsC {
@@ -731,7 +732,7 @@
     .git{
         display: flex;
         position: relative;
-        right: 27rem;
+        right: 28rem;
         top: 10rem;
     }
 }
