@@ -259,3 +259,59 @@
         white-space: nowrap;
     }
 }
+
+@media screen and (max-width:535px) {
+    .title {
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-family: inter;
+        color: #ca234e;
+        max-width: fit-content;
+    }
+
+    .textP {
+        color: #ca234e;
+        font-family: inter;
+        font-size: 11px;
+        max-width: 220px;
+        display: flex;
+
+
+    }
+
+    .textL {
+        color: #ca234e;
+        font-family: inter;
+        font-size: 11px;
+        max-width: 200px;
+        display: flex;
+
+
+    }
+
+    .textS {
+        color: #ca234e;
+        font-family: inter;
+        font-size: 11px;
+        max-width: 170px;
+        display: flex;
+    }
+
+    .iconsWrapper {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .iconsWrapper>div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+}

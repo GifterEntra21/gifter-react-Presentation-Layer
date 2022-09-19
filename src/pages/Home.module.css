@@ -346,3 +346,44 @@
         right: 4rem;
     }
 }
+
+@media screen and (width: 535px){
+    .amount {
+        color: white;
+        font-style: inter;
+        font-weight: 400;
+        font-size: 13px;
+        margin-left: 3rem;
+        position: relative;
+        top: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .button {
+        border-radius: 8px;
+        border: none;
+        background-color: #e20f46;
+        margin-left: 10px;
+        color: white;
+        padding: 15px;
+        font-family: inter;
+        position: relative;
+        top: 3rem;
+
+    }
+
+    .input {
+        border-radius: 8px;
+        border-color: rgb(255, 255, 255);
+        padding: 13px;
+        width: 229px;
+        margin-left: 3rem;
+        font-family: inter;
+        position: relative;
+        top: 3rem;
+    }
+
+    .photo {
+        display: none;
+    }
+}

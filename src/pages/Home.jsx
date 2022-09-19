@@ -1,14 +1,9 @@
 import styles from './Home.module.css';
 import simbolo from "../images/simbolo.png";
-import axios from 'axios';
+import useRefreshToken from '../hooks/useRefreshToken';
 
 export default function Home() {
-    axios.post("https://localhost:7008/api/Auth/login",
-        {
-            "username":'string',
-            "password":'string'
-        }
-    ).then(response=>console.log(response.data)).catch(error=>console.log(error))
+    
     return (
         <div className={styles.wrapper}>
             <div>
