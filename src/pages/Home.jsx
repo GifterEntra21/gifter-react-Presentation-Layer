@@ -1,9 +1,9 @@
 import styles from './Home.module.css';
 import simbolo from "../images/simbolo.png";
-import useRefreshToken from '../hooks/useRefreshToken';
+import api from "../services/api"
 
 export default function Home() {
-    
+    console.log(api())
     return (
         <div className={styles.wrapper}>
             <div>
@@ -22,8 +22,8 @@ export default function Home() {
                 <h5 className={styles.amount}>
                     Qual o link do perfil do presenteado?
                 </h5>
-                <input placeholder='instagram.com/giftersolutions'  className={styles.input}/>
-                <button className={styles.button}>Descobrir</button>
+                <input placeholder='instagram.com/giftersolutions' className={styles.input} />
+                <a href="/presente"><button className={styles.button}  >Descobrir</button></a>
             </div>
             <div className={styles.photo}>
                 <img src={simbolo} alt="present.png" />
