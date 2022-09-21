@@ -10,10 +10,11 @@ export default function Presente() {
             <Header />
 
             <div className={style.cardWrapper}>
+                
                 <Card title='Luminaria One Piece'
                     imageurl='https://m.media-amazon.com/images/I/81fvNmmrd3L._AC_SX522_.jpg'
                     body='Luminaria LED 3D, com 7 cores. Inclui: Cabo USB, uma base e uma luminária.'
-                    link='https://shopee.com.br/Lumin%C3%A1ria---abajur-de-mesa---estilo-3D---Luffy---One-Piece---muda-de-cor-com-7-cores-diferentes-i.380138862.14240520932' />
+                />
 
                 <Card title='Suplemento BIOMAXX'
                     imageurl='https://melcoprol.com.br/images/produtos/Biomaxx-60caps-550mg.jpg'

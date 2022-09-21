@@ -10,7 +10,7 @@ export default function Header() {
 
                     <li><a href="/"><img src={logo} alt="logo.png" /></a></li>
                     <ul>
-                        <li><a href="/presente" className={style.pages}>Categorias</a></li>
+                        <li><a href="/presente" className={style.pages}>Todos os produtos</a></li>
                         <li><a href="#footer" className={style.pages}>Sobre nós</a></li>
                     </ul>
                 </ul>
