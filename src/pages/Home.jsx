@@ -1,9 +1,14 @@
 import styles from './Home.module.css';
 import simbolo from "../images/simbolo.png";
-import api from "../services/api"
-
+import { apiConfig } from '../services/apiConfig';
+import { login } from '../services/token';
 export default function Home() {
-    console.log(api())
+
+
+
+    //apiConfig.get('/Users').then(response => console.log(response.data)).catch(erro => console.log(erro))
+    //console.log(localStorage.getItem("token"))
+
     return (
         <div className={styles.wrapper}>
             <div>
@@ -24,6 +29,7 @@ export default function Home() {
                 </h5>
                 <input placeholder='instagram.com/giftersolutions' className={styles.input} />
                 <a href="/presente"><button className={styles.button}  >Descobrir</button></a>
+                <button onClick={() => { console.log(login()) }} >   afiuewfouwedhuiwaehfoihwopeith</button>
             </div>
             <div className={styles.photo}>
                 <img src={simbolo} alt="present.png" />
