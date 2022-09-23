@@ -4,9 +4,8 @@ import styles from './Card.module.css'
 
 function Card({ title, imageurl, link }) {
     return (
-        <a src={link} alt=''>
+        <a href={link} alt='' target="_blank">
             <div className={styles.Container}>
-
                 <div className={styles.Content}>
                     <div className={styles.Image}>
                         <img src={imageurl} alt='' />
