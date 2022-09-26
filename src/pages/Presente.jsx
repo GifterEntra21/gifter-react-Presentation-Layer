@@ -28,6 +28,15 @@ export default function Presente() {
                 <Card />
                 <Card />
                 <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
             </div>
         </div>
     )
