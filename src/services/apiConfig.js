@@ -7,6 +7,7 @@ export const apiConfig = axios.create({
     baseURL: "https://localhost:7008",
 });
 
+
 apiConfig.interceptors.response.use(
     (response) => {
         return response;
@@ -15,16 +16,12 @@ apiConfig.interceptors.response.use(
         const acess_token = localStorage.getItem("token");
 
         if (acess_token === null) {
-            const response = await login();
-            error.retryCondition = true
+            const response = await login();          
             return response;
         }
         if (error.response.status === 401) {
             const response = await refresh();
-            
-            error.retryCondition = true
             return response;
-
         }
         return Promise.reject(error);
     }
