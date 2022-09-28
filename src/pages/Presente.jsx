@@ -3,6 +3,7 @@ import Card from "../Components/Card/Card";
 import style from "./Presente.module.css"
 import Header from "../Components/Header/Header";
 
+
 export default function Presente() {
     return (
 
@@ -23,11 +24,9 @@ export default function Presente() {
                     imageurl='https://cf.shopee.com.br/file/dff3fda1eca63b45077cc3dbc809781e'
                     link="https://shopee.com.br/product/570256376/16881347658?af_click_lookback=7d&af_reengagement_window=7d&af_siteid=an_18112960000&af_sub_siteid=XoWTi8WRo1A-5WJIYCieteUTZy.3Dco.BQ&af_viewthrough_lookback=1d&c=-&is_retargeting=true&pid=affiliates&utm_campaign=-&utm_content=XoWTi8WRo1A-5WJIYCieteUTZy.3Dco.BQ&utm_medium=affiliates&utm_source=an_18112960000&utm_term=7q1arjw3gkb9XoWTi8WRo1A-5WJIYCieteUTZy.3Dco.BQ"
                 />
-
                 <Card />
                 <Card />
                 <Card />
-
             </div>
         </div>
     )

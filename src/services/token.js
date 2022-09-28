@@ -32,18 +32,18 @@ export const refresh = async () =>
     .catch((error) => {
       return localStorage.clear();
     });
-var CanRetry;
-export const GetUser = async () => {
 
+
+export const GetUser = async () => {
 
   try {
     const token = localStorage.getItem("token")
-    // amount of retries we're willing to do
+
     const myConfig = {
       headers: {
         Authorization: `Bearer ${token}`
       },
-      // we're willing to wait 50ms, servers still hate you
+
       timeout: 150
     }
       try {
@@ -51,11 +51,11 @@ export const GetUser = async () => {
         if (req.status < 201) {
           console.log(req.data);
         } else {
-          console.log('cannot fetch data');
+          console.log('tudo certo');
           GetUser()
         }
       } catch (error) {
-        console.log('cannot fetch data');
+        console.log('tudo mais que certo');
       }
   }
   catch (e) {

@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Presente from "./pages/Presente";
 import './App.css';
 import Set from '../src/Components/set/Set'
-import { refresh } from '../src/services/apiConfig'
+
 
 
 function App() {

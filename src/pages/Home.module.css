@@ -55,6 +55,17 @@
     transform: scale(1.1);
 }
 
+
+
+.photo {
+    margin-left: 43rem;
+    margin-top: -22rem;
+    margin-bottom: -11rem;
+    display: flex;
+    width: auto;
+    height: 720px;
+    background-image: none;
+}
 .input {
     border-radius: 8px;
     border-color: rgb(255, 255, 255);
@@ -66,16 +77,24 @@
     top: 8rem;
 }
 
-.photo {
-    margin-left: 43rem;
-    margin-top: -22rem;
-    margin-bottom: -11rem;
+.spinner {
     display: flex;
-    width: auto;
-    height: 720px;
-    background-image: none;
+	border: 3px solid #DCDCDC;
+	border-left-color: black;
+	border-radius: 100%;
+	height: 50px;
+	width: 50px;
+    animation: loading 2s cubic-bezier(0, .25, .7125, .1) infinite;
 }
 
+@keyframes loading {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
 
 @media screen and (max-width:414px) {
     .title {
