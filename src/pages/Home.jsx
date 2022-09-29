@@ -1,13 +1,9 @@
 import styles from './Home.module.css';
 import simbolo from "../images/simbolo.png";
-import { GetUser } from '../services/token';
 
-function intermediate() {
-}
+
 
 export default function Home() {
-
-    let flag = true
     return (
         <div className={styles.wrapper}>
             <div>
@@ -28,10 +24,9 @@ export default function Home() {
                 </h5>
                 <input placeholder='instagram.com/giftersolutions' className={styles.input} />
 
-                <button onClick={() =>GetUser()} className={styles.button} >Descobrir</button>
-                <button onClick={() => console.log(localStorage.getItem("token") + " \r\n     refresh: " + localStorage.getItem("refreshToken"))}>ver token</button>
-                <button onClick={() => localStorage.clear()}> clear cookies</button>
-                <div className={styles.spinner} style={flag ? { display: "none" } : {}}></div>
+                <button className={styles.button} >Descobrir</button>
+                <div className={styles.spinner}></div>
+                <div className={styles.waiting}>Carregando...</div>
             </div>
             <div className={styles.photo}>
                 <img src={simbolo} alt="present.png" />

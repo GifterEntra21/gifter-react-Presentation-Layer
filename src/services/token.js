@@ -49,13 +49,13 @@ export const GetUser = async () => {
       try {
         const req = await apiConfig.get('/Users', myConfig);
         if (req.status < 201) {
-          console.log(req.data);
-        } else {
-          console.log('tudo certo');
+          return(req.data);
+        } else{
+          console.log("tentando novamente")
           GetUser()
         }
       } catch (error) {
-        console.log('tudo mais que certo');
+        console.log('error2');
       }
   }
   catch (e) {

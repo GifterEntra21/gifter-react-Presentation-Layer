@@ -12,6 +12,7 @@ export default function Header() {
                     <ul>
                         <li><a href="/presente" className={style.pages}>Todos os produtos</a></li>
                         <li><a href="#footer" className={style.pages}>Sobre nós</a></li>
+                        <li><a href="/erro" className={style.pages}>Erro</a></li>
                     </ul>
                 </ul>
             </nav>
