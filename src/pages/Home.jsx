@@ -1,28 +1,14 @@
 import styles from './Home.module.css';
 import simbolo from "../images/simbolo.png";
 import { useState } from 'react';
-import { GetUser } from "../services/token"
-
-
-
-
-// let spinnerCss = {
-//     display: "flex;",
-//     position: "relative;",
-//     top: "9rem;",
-//     left: "3rem;",
-//     border: "3px solid #DCDCDC;",
-//     height: "25px;",
-//     width: "25px;",
-//     animation: "loading 2s cubic - bezier(0, .25, .7125, .1) infinite;"
-// }
+import { GetUser } from '../services/Api/ApiMethods'
 
 export default function Home() {
-
-    const [spinner, setSpinner] = useState(true);
+    const [spinner, setSpinner] = useState(false);
 
     const eventHandler = () => {
-        setSpinner(false)
+        GetUser()
+        setSpinner(spinner ? false : true)
     }
 
     return (
@@ -45,17 +31,13 @@ export default function Home() {
                 </h5>
                 <input placeholder='instagram.com/giftersolutions' className={styles.input} />
 
-                <button className={styles.button} >Descobrir</button>
-                <button oneClick={eventHandler}> aaa</button>
-                <button onClick={() => console.log(spinner)}>    ver spinner </button>
-
-
+                <button className={styles.button} onClick={() => eventHandler()} disabled={spinner ? true : false} >Descobrir</button>
+                <div className={spinner ? styles.spinner : styles.aaaaaaaa}></div>
+                <a href='/presente'><button className={styles.tt}>cards</button></a>
             </div>
             <div className={styles.photo}>
                 <img src={simbolo} alt="present.png" />
             </div>
-
         </div>
-
     )
 }

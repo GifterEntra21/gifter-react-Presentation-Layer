@@ -3,7 +3,7 @@
 .rectangle {
     background-color: #f6cdc9;
     max-width: 100vw;
-    padding: 2.5rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
