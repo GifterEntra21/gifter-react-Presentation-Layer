@@ -3,6 +3,7 @@ import styles from './Card.module.css'
 
 
 function Card({ title, imageurl, link }) {
+    
     return (
         <a href={link} alt='' target="_blank">
             <div className={styles.Container}>

@@ -2,9 +2,16 @@ import styles from './Home.module.css';
 import simbolo from "../images/simbolo.png";
 import { useState } from 'react';
 import { GetUser } from '../services/Api/ApiMethods'
+import { useEffect } from 'react';
 
 export default function Home() {
     const [spinner, setSpinner] = useState(false);
+
+    
+    useEffect(() => {
+
+        console.log("asd")
+    }, []);
 
     const eventHandler = () => {
         GetUser()

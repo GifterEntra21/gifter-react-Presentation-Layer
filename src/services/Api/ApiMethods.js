@@ -4,8 +4,7 @@ export const GetUser = async () => {
   try {
     const req = await apiConfig.get('/Users');
     if (req.status < 201) {
-      console.log(req.data);
-      return req.data
+      return JSON.stringify(req.data)
     } else {
       console.log("tentando novamente")
       return GetUser()
