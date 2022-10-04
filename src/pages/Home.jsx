@@ -2,16 +2,10 @@ import styles from './Home.module.css';
 import simbolo from "../images/simbolo.png";
 import { useState } from 'react';
 import { GetUser } from '../services/Api/ApiMethods'
-import { useEffect } from 'react';
+
 
 export default function Home() {
     const [spinner, setSpinner] = useState(false);
-
-    
-    useEffect(() => {
-
-        console.log("asd")
-    }, []);
 
     const eventHandler = () => {
         GetUser()
@@ -40,7 +34,6 @@ export default function Home() {
 
                 <button className={styles.button} onClick={() => eventHandler()} disabled={spinner ? true : false} >Descobrir</button>
                 <div className={spinner ? styles.spinner : styles.aaaaaaaa}></div>
-                <a href='/presente'><button className={styles.tt}>cards</button></a>
             </div>
             <div className={styles.photo}>
                 <img src={simbolo} alt="present.png" />

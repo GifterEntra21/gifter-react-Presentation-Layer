@@ -2,7 +2,7 @@ import { apiConfig } from "./apiConfig";
 
 export const GetUser = async () => {
   try {
-    const req = await apiConfig.get('/Users');
+    const req = await apiConfig.get('/AllGifts');
     if (req.status < 201) {
       return JSON.stringify(req.data)
     } else {
