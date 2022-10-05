@@ -30,3 +30,15 @@ html{
   scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar {
+  width: 13px;               
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(180, 141, 141);       
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ffffffbe;     
+  border: none;
+}

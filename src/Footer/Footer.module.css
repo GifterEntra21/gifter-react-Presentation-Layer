@@ -64,12 +64,11 @@
 }
 
 
-
 @media screen and (max-width:414px) {
     .innerFooter {
         background-color: #ff712f;
         max-width: 100vw;
-        height: 42vh;
+        height: 60vh;
         display: flex;
         flex-direction: column;
     }
@@ -141,7 +140,7 @@
     .innerFooter {
         background-color: #ff712f;
         max-width: 100vw;
-        height: 40vh;
+        height: 78vh;
         display: flex;
         flex-direction: column;
     }
@@ -181,7 +180,7 @@
     .git{
         display: flex;
         position: relative;
-        left: -36rem;
+        left: -38rem;
         top: 12rem;
     }
 }
@@ -190,7 +189,7 @@
     .innerFooter {
         background-color: #ff712f;
         max-width: 100vw;
-        height: 67vh;
+        height: 75vh;
         display: flex;
         flex-direction: column;
     }
@@ -230,7 +229,7 @@
     .git{
         display: flex;
         position: relative;
-        left: -36rem;
+        left: -38rem;
         top: 12rem;
     }
 }
@@ -239,7 +238,7 @@
     .innerFooter {
         background-color: #ff712f;
         max-width: 100vw;
-        height: 80vh;
+        height: 68vh;
         display: flex;
         flex-direction: column;
 
@@ -249,9 +248,10 @@
         width: 90px;
         height: 90px;
         border-radius: 50%;
+        position: relative;
         display: flex;
         align-items: center;
-        justify-content: center;
+        margin-left: 3rem;
     }
 
     .names {
@@ -282,14 +282,14 @@
     .git{
         display: flex;
         position: relative;
-        right: 37rem;
+        right: 45rem;
         top: 12rem;
     }
 }
 
 @media screen and (width:1024px) {
     .innerFooter {
-        height: 67vh;
+        height: 79vh;
     }
 
     .photoMembers>a>img{
@@ -347,6 +347,7 @@
         position: relative;
         top: -2rem;
         left: -5.2rem;
+        
     }
     
     .iconsC {
@@ -367,40 +368,50 @@
         position: relative;
         right: 27rem;
         top: 10rem;
-        
     }
 }
 
 @media screen and (width:393px) {
     .innerFooter {
-        height: 44vh;
+        height: 58vh;
     }
 }
 
 @media screen and (width:390px) {
     .innerFooter {
-        height: 44vh;
+        height: 58vh;
     }
 }
 
 @media screen and (width:912px) {
     .innerFooter{
-        height: 40vh;
+        height: 86vh;
     }
 
     .names {
         white-space: nowrap;
+        position: relative;
+        display: flex;
+        left: -8rem;
+    }
+
+    .iconsC{
+        display: flex;
+        position: relative;
+        left: -2.3rem;
     }
 
     .git{
         position: relative;
         top: 16rem;
-        right: 45rem;
+        right: 43rem;
     }
 
-    .photoMembers {
+    .photoMembers>a>img {
+        display: flex;
         position: relative;
-        margin-right: 1rem;
+        margin-right: -1rem;
+        margin-left: none;
     }
 }
 
@@ -408,7 +419,7 @@
     .innerFooter {
         background-color: #ff712f;
         max-width: 100vw;
-        height: 55vh;
+        height: 55.5vh;
         display: flex;
         flex-direction: column;
     }
@@ -478,13 +489,17 @@
 @media screen and (width:1114px) {
     .innerFooter{
         max-height: fit-content;
-        height: 60vh;
+        height: 65vh;
     }
 
     .git {
         position: relative;
-        top: 10rem;
-        left: -38rem;
+        top: 11rem;
+        left: -40rem;
+    }
+
+    .names {
+        white-space: nowrap;
     }
 }
 
@@ -783,5 +798,41 @@
         right: 27rem;
         top: 6rem;
         
+    }
+}
+
+@media screen and (width:1366px){
+    .innerFooter {
+        height: 65vh;
+    }
+
+    .photoMembers>a>img{
+        width: 90px;
+        height: 90px;
+    }
+
+    .names {
+        margin-left: 5rem;
+        width: max-content;
+        height: fit-content;
+        display: flex;
+        white-space: nowrap;
+        color: rgb(255, 255, 255);
+        font-size:15px;
+        position: relative;
+        top: 0.1rem;
+        left: -13.6rem;
+    }
+
+    .iconsC {
+        top: 2rem;
+        right: 3.2rem;
+    }
+    
+    .git{
+        display: flex;
+        position: relative;
+        right: 52rem;
+        top: 12rem;
     }
 }

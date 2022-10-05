@@ -31,7 +31,7 @@ export default function Footers() {
 
                 <div className={styles.photoMembers}>
                     
-                    <a href={linkMarco} target="_blank"><img src={Marco} /></a>
+                    <a href={linkMarco} rel="noreferrer noopener" target="_blank"><img src={Marco} alt=''/></a>
                     <div className={styles.iconsC}>
                         <TiSocialLinkedin style={icons} />
                     </div>
@@ -39,7 +39,7 @@ export default function Footers() {
                         <h5>Marco</h5>
                     </div>
 
-                    <a href={linkMatheus} target="_blank"><img src={Matheus} /></a>
+                    <a href={linkMatheus} rel="noreferrer noopener" target="_blank"><img src={Matheus} alt=''/></a>
                     <div className={styles.iconsC}>
                         <TiSocialLinkedin style={icons} />
                     </div>
@@ -47,7 +47,7 @@ export default function Footers() {
                         <h5>Matheus</h5>
                     </div>
 
-                    <a href={linkVitorA} target="_blank"><img src={VitorA} /></a>
+                    <a href={linkVitorA} rel="noreferrer noopener" target="_blank"><img src={VitorA} alt=''/></a>
                     <div className={styles.iconsC}>
                         <TiSocialLinkedin style={icons} />
                     </div>
@@ -55,7 +55,7 @@ export default function Footers() {
                         <h5>Vitor A.</h5>
                     </div>
 
-                    <a href={linkVitorH} target="_blank" ><img src={VitorH} /></a>
+                    <a href={linkVitorH} rel="noreferrer noopener" target="_blank" ><img src={VitorH} alt=''/></a>
                     <div className={styles.iconsC}>
                         <TiSocialLinkedin style={icons} />
                     </div>
@@ -63,8 +63,8 @@ export default function Footers() {
                         <h5>Vitor H.</h5>
                     </div>
                     <div className={styles.git}>
-                        <a href={linkGitHub} target="_blank"><AiFillGithub style={hub} /></a>
-                        <DiGithubFull style={hub} />
+                        <a href={linkGitHub} rel="noreferrer noopener" target="_blank"><AiFillGithub style={hub} /></a>
+                        <a href={linkGitHub} rel="noreferrer noopener" target="_blank"><DiGithubFull style={hub} /></a>
                     </div>
                 </div>
 
