@@ -137,4 +137,18 @@ nav .pages:hover:before {
     }
 }
 
+@media screen and (width: 280px){
+    nav a{
+        white-space: nowrap;
+        margin-left: -0.2rem;
+        font-size: 8px ;
+    }
+
+    li a{
+        display: flex;
+        max-width: fit-content;
+        margin-right: 1rem;
+    }
+}
+
 

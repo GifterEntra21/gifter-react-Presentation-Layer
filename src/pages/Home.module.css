@@ -364,15 +364,6 @@
     }
 }
 
-@media screen and (width:1114px) {
-    .photo {
-        position: relative;
-        left: -11rem;
-        top: 1rem;
-        height: 600px;
-    }
-}
-
 @media screen and (width:717px) {
     .photo {
         display: none;
@@ -504,8 +495,9 @@
 
 @media screen and (width:1366px) {
     .photo {
+        display: flex;
         position: relative;
-        right: 10rem;
+        left: -2.5rem
     }
 }
 
@@ -550,3 +542,599 @@
     }
 }
 
+@media screen and (width: 280px) {
+    .amount {
+        color: white;
+        font-style: inter;
+        font-weight: 400;
+        font-size: 13px;
+        margin-left: 0.5rem;
+        position: relative;
+        top: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .button {
+        border-radius: 8px;
+        border: none;
+        background-color: #e20f46;
+        margin-left: 10px;
+        color: white;
+        width: 229px;
+        padding: 15px;
+        font-family: inter;
+        position: relative;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        top: 3.5rem;
+
+    }
+
+    .input {
+        border-radius: 8px;
+        border-color: rgb(255, 255, 255);
+        padding: 13px;
+        width: 229px;
+        margin-left: 0.5rem;
+        font-family: inter;
+        position: relative;
+        top: 3rem;
+    }
+
+    .photo {
+        display: none;
+    }
+
+    .spinner {
+        display: flex;
+        position: relative;
+        top: 3.5rem;
+        left: 0.7rem;
+    }
+
+    .waiting {
+        display: flex;
+        position: relative;
+        top: 2rem;
+        left: 2.5rem;
+    }
+}
+
+@media screen and (min-width:1390px) and (max-width:1406px)  {
+    .photo {
+        display: flex;
+        position: relative;
+        left: -1rem;
+    }
+}
+
+@media screen and (min-width:1370px) and (max-width:1389px)  {
+    .photo {
+        display: flex;
+        position: relative;
+        left: -5rem;
+    }
+}
+
+@media screen and (min-width:1367px) and (max-width:1369px)  {
+    .photo {
+        display: flex;
+        position: relative;
+        left: -2.5rem;
+    }
+}
+
+@media screen and (min-width:1355px) and (max-width:1365px)  {
+    .photo {
+        display: flex;
+        position: relative;
+        left: -4rem;
+    }
+}
+
+@media screen and (min-width:1344px) and (max-width:1354px)  {
+    .photo {
+        display: flex;
+        position: relative;
+        left: -4rem;
+    }
+}
+
+@media screen and (min-width:1310px) and (max-width:1343px)  {
+    .photo {
+        display: flex;
+        position: relative;
+        left: -6.5rem;
+    }
+}
+
+@media screen and (min-width:1281px) and (max-width:1309px)  {
+    .photo {
+        display: flex;
+        position: relative;
+        right: 12rem;
+        bottom: -1rem;
+        width: auto;
+        height: 620px;
+    }
+
+    .input {
+        margin-bottom: 1rem;
+    }
+
+    .spinner {
+        display: flex;
+        position: relative;
+        left: 18rem;
+        top: 5rem;
+    }
+
+    .waiting {
+        display: flex;
+        position: relative;
+        left: 20rem;
+        top: 3.5rem;
+    }
+}
+
+@media screen and (min-width:1200px) and (max-width:1279px)  {
+    .photo {
+        display: flex;
+        position: relative;
+        right: 12rem;
+        bottom: -1rem;
+        width: auto;
+        height: 620px;
+    }
+
+    .input {
+        margin-bottom: 1rem;
+    }
+
+    .spinner {
+        display: flex;
+        position: relative;
+        left: 18rem;
+        top: 5rem;
+    }
+
+    .waiting {
+        display: flex;
+        position: relative;
+        left: 20rem;
+        top: 3.5rem;
+    }
+}
+
+@media screen and (min-width:1150px) and (max-width:1199px)  { 
+    .photo {
+        display: flex;
+        position: relative;
+        right: 19rem;
+        bottom: 4rem;
+        width: auto;
+        height: 600px;
+    }
+
+    .input {
+        margin-bottom: 8rem;
+    }
+
+    .spinner {
+        display: flex;
+        position: relative;
+        left: 3rem;
+        top: 1rem;
+    }
+
+    .waiting {
+        display: flex;
+        position: relative;
+        left: 5.5rem;
+        top: -0.3rem;
+    }
+}
+
+@media screen and (min-width:1100px) and (max-width:1149px)  { 
+    .photo {
+        display: flex;
+        position: relative;
+        right: 19rem;
+        bottom: 4rem;
+        width: auto;
+        height: 600px;
+    }
+
+    .input {
+        margin-bottom: 8rem;
+    }
+
+    .spinner {
+        display: flex;
+        position: relative;
+        left: 3rem;
+        top: 1rem;
+    }
+
+    .waiting {
+        display: flex;
+        position: relative;
+        left: 5.5rem;
+        top: -0.3rem;
+    }
+}
+
+@media screen and (min-width:1025px) and (max-width:1099px)  { 
+    .photo {
+        display: flex;
+        position: relative;
+        right: 19rem;
+        bottom: 4rem;
+        width: auto;
+        height: 600px;
+    }
+
+    .input {
+        margin-bottom: 8rem;
+    }
+
+    .spinner {
+        display: flex;
+        position: relative;
+        left: 3rem;
+        top: 1rem;
+    }
+
+    .waiting {
+        display: flex;
+        position: relative;
+        left: 5.5rem;
+        top: -0.3rem;
+    }
+}
+
+@media screen and (min-width:1000px) and (max-width:1023px)  { 
+    .photo {
+        display: flex;
+        position: relative;
+        right: 19rem;
+        bottom: 4rem;
+        width: auto;
+        height: 600px;
+    }
+
+    .input {
+        margin-bottom: 8rem;
+    }
+
+    .spinner {
+        display: flex;
+        position: relative;
+        left: 3rem;
+        top: 1rem;
+    }
+
+    .waiting {
+        display: flex;
+        position: relative;
+        left: 5.5rem;
+        top: -0.3rem;
+    }
+}
+
+@media screen and (min-width:950px) and (max-width:999px)  { 
+    .photo {
+        display: flex;
+        position: relative;
+        right: 19.4rem;
+        bottom: 2rem;
+        width: auto;
+        height: 530px;
+    }
+
+    .input {
+        margin-bottom: 7rem;
+    }
+
+    .spinner {
+        display: flex;
+        position: relative;
+        left: 3rem;
+        top: 1.5rem;
+    }
+
+    .waiting {
+        display: flex;
+        position: relative;
+        left: 5.5rem;
+        top: 0.1rem;
+    }
+}
+
+@media screen and (min-width:913px) and (max-width:949px)  { 
+    .photo {
+        display: flex;
+        position: relative;
+        right: 19.4rem;
+        bottom: 2rem;
+        width: auto;
+        height: 530px;
+    }
+
+    .input {
+        margin-bottom: 7rem;
+    }
+
+    .spinner {
+        display: flex;
+        position: relative;
+        left: 3rem;
+        top: 1.5rem;
+    }
+
+    .waiting {
+        display: flex;
+        position: relative;
+        left: 5.5rem;
+        top: 0.1rem;
+    }
+}
+
+@media screen and (min-width:900px) and (max-width:911px)  { 
+    .photo {
+        display: flex;
+        position: relative;
+        right: 19.9rem;
+        bottom: 2rem;
+        width: auto;
+        height: 527px;
+    }
+
+    .input {
+        margin-bottom: 7rem;
+    }
+
+    .spinner {
+        display: flex;
+        position: relative;
+        left: 3rem;
+        top: 1.5rem;
+    }
+
+    .waiting {
+        display: flex;
+        position: relative;
+        left: 5.5rem;
+        top: 0.1rem;
+    }
+}
+
+@media screen and (min-width:850px) and (max-width:899px)  { 
+    .photo {
+        display: flex;
+        position: relative;
+        top: -5rem;
+        right: 18rem;
+        width: auto;
+        height: 440px;
+    }
+
+    .input {
+        margin-bottom: 10rem;
+    }
+
+    .spinner {
+        display: flex;
+        position: relative;
+        left: 3rem;
+        top: -1rem;
+    }
+
+    .waiting {
+        display: flex;
+        position: relative;
+        left: 5rem;
+        top: -2.5rem;
+    }
+}
+
+@media screen and (min-width:821px) and (max-width:849px)  {
+    .photo {
+        display: flex;
+        position: relative;
+        top: -5rem;
+        right: 19.7rem;
+        width: auto;
+        height: 440px;
+    }
+
+    .input {
+        margin-bottom: 10rem;
+    }
+
+    .spinner {
+        display: flex;
+        position: relative;
+        left: 3rem;
+        top: -1rem;
+    }
+
+    .waiting {
+        display: flex;
+        position: relative;
+        left: 5rem;
+        top: -2.5rem;
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:819px)  {
+    .photo {
+        display: none;
+    }
+
+    .input {
+        position: relative;
+        top: 3rem;
+    }
+
+    .amount {
+        position: relative;
+        top: 2.2rem;
+    }
+
+    .button {
+        position: relative;
+        top: 3rem;
+    }
+
+    .spinner {
+        position: relative;
+        top: 1rem;
+    }
+
+    .waiting {
+        position: relative;
+        top: -0.4rem;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:799px)  {
+    .photo {
+        display: none;
+    }
+
+    .input {
+        position: relative;
+        top: 3rem;
+    }
+
+    .amount {
+        position: relative;
+        top: 2.2rem;
+    }
+
+    .button {
+        position: relative;
+        top: 3rem;
+    }
+
+    .spinner {
+        position: relative;
+        top: 1rem;
+    }
+
+    .waiting {
+        position: relative;
+        top: -0.4rem;
+    }
+}
+
+@media screen and (min-width:718px) and (max-width:768px)  {
+    .photo {
+        display: none;
+    }
+
+    .input {
+        position: relative;
+        top: 3rem;
+    }
+
+    .amount {
+        position: relative;
+        top: 2.2rem;
+    }
+
+    .button {
+        position: relative;
+        top: 3rem;
+    }
+
+    .spinner {
+        position: relative;
+        top: 1rem;
+    }
+
+    .waiting {
+        position: relative;
+        top: -0.4rem;
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:716px)  {
+    .photo {
+        display: none;
+    }
+
+    .input {
+        position: relative;
+        top: 3rem;
+    }
+
+    .amount {
+        position: relative;
+        top: 2.2rem;
+    }
+
+    .button {
+        position: relative;
+        top: 3rem;
+    }
+
+    .spinner {
+        position: relative;
+        top: 1rem;
+    }
+
+    .waiting {
+        position: relative;
+        top: -0.4rem;
+    }
+}
+
+@media screen and (min-width:541px) and (max-width:699px)  {
+    .photo {
+        display: none;
+    }
+
+    .input {
+        position: relative;
+        top: 3rem;
+    }
+
+    .amount {
+        position: relative;
+        top: 2.2rem;
+    }
+
+    .button {
+        position: relative;
+        top: 3rem;
+    }
+
+    .spinner {
+        position: relative;
+        top: 1rem;
+    }
+
+    .waiting {
+        position: relative;
+        top: -0.4rem;
+    }
+}
+
+@media screen and (min-width:541px) and (max-width:576px)  {
+    .spinner {
+        display: flex;
+        position: relative;
+        left: 3rem;
+        top: 3.5rem;
+    }
+
+    .waiting {
+        display: flex;
+        position: relative;
+        left: 5rem;
+        top: 2rem;
+    }
+}

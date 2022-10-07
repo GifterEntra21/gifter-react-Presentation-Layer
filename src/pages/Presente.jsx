@@ -27,7 +27,6 @@ export default function Presente() {
         asd();
     }, []);
 
-
     return (
 
         <div className={style.wrapper}>
