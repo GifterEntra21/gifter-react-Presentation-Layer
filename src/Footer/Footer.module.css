@@ -68,7 +68,7 @@
     .innerFooter {
         background-color: #ff712f;
         max-width: 100vw;
-        height: 42vh;
+        height: 52vh;
         display: flex;
         flex-direction: column;
     }
@@ -238,7 +238,7 @@
     .innerFooter {
         background-color: #ff712f;
         max-width: 100vw;
-        height: 60vh;
+        height: 67vh;
         display: flex;
         flex-direction: column;
 
@@ -287,46 +287,10 @@
     }
 }
 
-@media screen and (width:1024px) {
-    .innerFooter {
-        height: 68vh;
-    }
-
-    .photoMembers>a>img{
-        width: 90px;
-        height: 90px;
-    }
-
-    .names {
-        width: max-content;
-        height: fit-content;
-        display: flex;
-        white-space: nowrap;
-        color: rgb(255, 255, 255);
-        font-size:15px;
-        position: relative;
-        top: 0.1rem;
-        left: -8.3rem;
-    }
-
-    .iconsC {
-        top: 2.5rem;
-        right: 3rem;
-    }
-    
-    .git{
-        display: flex;
-        position: relative;
-        right: 37rem;
-        top: 12rem;
-    }
-}
-
 @media screen and (width:375px) {
     .innerFooter {
         height: 56vh;
     }
-
     .photoMembers>a>img{
         width: 45px;
         height: 45px;
@@ -373,13 +337,13 @@
 
 @media screen and (width:393px) {
     .innerFooter {
-        height: 44vh;
+        height: 52vh;
     }
 }
 
 @media screen and (width:390px) {
     .innerFooter {
-        height: 46vh;
+        height: 52vh;
     }
 }
 
@@ -749,55 +713,7 @@
     }
 }
 
-@media screen and (width:535px) {
-    .innerFooter {
-        height: 57vh;
-    }
 
-    .photoMembers>a>img{
-        width: 45px;
-        height: 45px;
-        border-radius: 50%;
-        display: flex;
-        position: relative;
-        margin-top: -5rem;
-        margin-right: -3rem;
-        margin-left: -1rem;
-    }
-
-    .names {
-        width: max-content;
-        height: fit-content;
-        display: flex;
-        white-space: nowrap;
-        color: rgb(255, 255, 255);
-        font-size:13px;
-        position: relative;
-        top: -5.7rem;
-        left: -4.3rem;
-    }
-    
-    .iconsC {
-        width: 22px;
-        height: 22px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        background-color: #007bad;
-        position: relative;
-        top: -2.4rem;
-        right: 0.4rem;
-    }
-    
-    .git{
-        display: flex;
-        position: relative;
-        right: 27rem;
-        top: 6rem;
-        
-    }
-}
 
 @media screen and (width:1366px){
     .innerFooter {
@@ -925,7 +841,7 @@
 
 @media screen and (min-width:1310px) and (max-width:1343px)  {
     .innerFooter{
-        height: 55vh;
+        height: 65vh;
     }
     .git {
         display: flex;
@@ -962,7 +878,7 @@
     .innerFooter {
         background-color: #ff712f;
         max-width: 100vw;
-        height: 60vh;
+        height: 68vh;
         display: flex;
         flex-direction: column;
 
@@ -1016,7 +932,7 @@
     .innerFooter {
         background-color: #ff712f;
         max-width: 100vw;
-        height: 60vh;
+        height: 67vh;
         display: flex;
         flex-direction: column;
 
@@ -1070,7 +986,7 @@
     .innerFooter {
         background-color: #ff712f;
         max-width: 100vw;
-        height: 65vh;
+        height: 68vh;
         display: flex;
         flex-direction: column;
 
@@ -1123,7 +1039,7 @@
     .innerFooter {
         background-color: #ff712f;
         max-width: 100vw;
-        height: 65vh;
+        height: 68vh;
         display: flex;
         flex-direction: column;
 
@@ -1176,7 +1092,7 @@
     .innerFooter {
         background-color: #ff712f;
         max-width: 100vw;
-        height: 65vh;
+        height: 67vh;
         display: flex;
         flex-direction: column;
 
@@ -1225,7 +1141,7 @@
     }
 }
 
-@media screen and (min-width:1000px) and (max-width:1023px)  { 
+@media screen and (min-width:1000px) and (max-width:1024px)  { 
     .innerFooter {
         background-color: #ff712f;
         max-width: 100vw;
@@ -1789,5 +1705,280 @@
         position: relative;
         left: -30rem;
         top: 12rem;
+    }
+}
+
+@media screen and (min-width:541px) and (max-width:699px)  {
+    .innerFooter {
+        height: 57vh;
+    }
+
+    .photoMembers>a>img{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        display: flex;
+        position: relative;
+        margin-top: -5rem;
+        margin-right: -3rem;
+        margin-left: -1rem;
+    }
+
+    .names {
+        width: max-content;
+        height: fit-content;
+        display: flex;
+        white-space: nowrap;
+        color: rgb(255, 255, 255);
+        font-size:13px;
+        position: relative;
+        top: -5.7rem;
+        left: -4.3rem;
+    }
+    
+    .iconsC {
+        width: 22px;
+        height: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: #007bad;
+        position: relative;
+        top: -2.4rem;
+        right: 0.4rem;
+    }
+    
+    .git{
+        display: flex;
+        position: relative;
+        right: 27rem;
+        top: 6rem;
+        
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:539px)  {
+    .innerFooter {
+        background-color: #ff712f;
+        max-width: 100vw;
+        height: 55.5vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title {
+        margin-left: 1rem;
+        margin-top: 2rem;
+        color: white;
+        font-family: inter;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    
+
+    .photoMembers {
+        width: 300px;
+        height: fit-content;
+        align-items: center;
+        display: flex;
+        position: relative;
+        bottom: 4rem;
+        gap: 10px;
+    }
+
+    .photoMembers>a>img{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        display: flex;
+        position: relative;
+        margin-left: -2.4rem;
+    }
+
+    .names {
+        width: max-content;
+        height: fit-content;
+        display: flex;
+        white-space: nowrap;
+        color: rgb(255, 255, 255);
+        font-size:13px;
+        position: relative;
+        top: -1rem;
+        left: -6.01rem;
+    }
+    
+    .iconsC {
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: #007bad;
+        position: relative;
+        top: 1.5rem;
+        right: 2.5rem;
+    }
+    
+    .git{
+        display: flex;
+        position: relative;
+        right: 29rem;
+        top: 12rem;
+    }
+}
+
+@media screen and (min-width:426px) and (max-width: 499px){
+    .innerFooter {
+        background-color: #ff712f;
+        max-width: 100vw;
+        height: 53vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title {
+        margin-left: 1rem;
+        margin-top: 2rem;
+        color: white;
+        font-family: inter;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    
+
+    .photoMembers {
+        width: 300px;
+        height: fit-content;
+        align-items: center;
+        display: flex;
+        position: relative;
+        bottom: 4rem;
+        gap: 10px;
+    }
+
+    .photoMembers>a>img{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        display: flex;
+        position: relative;
+        margin-right: -5.5rem;
+        margin-left: -2.4rem;
+    }
+
+    .names {
+        width: max-content;
+        height: fit-content;
+        display: flex;
+        white-space: nowrap;
+        color: rgb(255, 255, 255);
+        font-size:13px;
+        position: relative;
+        top: -2rem;
+        left: -4.7rem;
+    }
+    
+    .iconsC {
+        width: 22px;
+        height: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: #007bad;
+        position: relative;
+        top: 1rem;
+        right: 1.5rem;
+    }
+    
+    .git{
+        display: flex;
+        position: relative;
+        right: 26rem;
+        top: 10rem;
+    }
+}
+
+@media screen and (min-width:450px) and (max-width: 499px){ 
+    .photoMembers {
+        gap: 16px
+    }
+
+    .names {
+        left: -5.4rem;
+    }
+}
+
+@media screen and (min-width:415px) and (max-width: 424px){
+    .innerFooter {
+        background-color: #ff712f;
+        max-width: 100vw;
+        height: 52vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title {
+        margin-left: 1rem;
+        margin-top: 2rem;
+        color: white;
+        font-family: inter;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    
+
+    .photoMembers {
+        width: 300px;
+        height: fit-content;
+        align-items: center;
+        display: flex;
+        position: relative;
+        bottom: 4rem;
+        gap: 10px;
+    }
+
+    .photoMembers>a>img{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        display: flex;
+        position: relative;
+        margin-right: -5.5rem;
+        margin-left: -2.4rem;
+    }
+
+    .names {
+        width: max-content;
+        height: fit-content;
+        display: flex;
+        white-space: nowrap;
+        color: rgb(255, 255, 255);
+        font-size:13px;
+        position: relative;
+        top: -2rem;
+        left: -4.7rem;
+    }
+    
+    .iconsC {
+        width: 22px;
+        height: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: #007bad;
+        position: relative;
+        top: 1rem;
+        right: 1.5rem;
+    }
+    
+    .git{
+        display: flex;
+        position: relative;
+        right: 26rem;
+        top: 10rem;
     }
 }

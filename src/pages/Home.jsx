@@ -1,16 +1,17 @@
 import styles from './Home.module.css';
 import simbolo from "../images/simbolo.png";
 import { useState } from 'react';
-import { GetUser } from '../services/Api/ApiMethods'
 
 
 export default function Home() {
 
     const [spinner, setSpinner] = useState(false);
     const [waiting, setWaiting] = useState(false);
+    const [inputData, setInputData] = useState("")
+    console.log(inputData);
 
     const eventHandler = () => {
-        GetUser()
+        localStorage.setItem("profile", inputData)
         setSpinner(spinner ? false : true)
         setWaiting(waiting ? false : true)
     }
@@ -33,11 +34,11 @@ export default function Home() {
                 <h5 className={styles.amount}>
                     Qual o @ do perfil presenteado?
                 </h5>
-                <input placeholder='@NomeDoPerfil' className={styles.input} />
+                <input placeholder='@NomeDoPerfil' onChange={(e) => { setInputData(e.target.value) }} className={styles.input} />
 
-                <button className={styles.button} onClick={() => eventHandler()} style={spinner ? {display:"none"} : {}} >Descobrir</button>
+                <button className={styles.button} onClick={() => eventHandler()} style={spinner ? { display: "none" } : {}} >Descobrir</button>
                 <div className={spinner ? styles.spinner : styles.aaaaaaaa}></div>
-                <div className={waiting ? styles.waiting : styles.aaaaaaaa} style={waiting ? {} : {display:"none"}}>Isso pode levar alguns minutos...</div>
+                <div className={waiting ? styles.waiting : styles.aaaaaaaa} style={waiting ? {} : { display: "none" }}>Isso pode levar alguns minutos...</div>
             </div>
             <div className={styles.photo}>
                 <img src={simbolo} alt="present.png" />

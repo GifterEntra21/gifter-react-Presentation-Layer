@@ -77,13 +77,12 @@
     align-items: center;
     flex-direction: column;
     height: 110px;
-    padding: 10px 10px;
+    padding: 30px 10px;
   }
 
   .Mega>.Title{
     display: flex;
     align-items: center;
-    flex-direction: column;
     width: 20px;
     height: 10px;
     font-size: 15px;
@@ -100,7 +99,7 @@
   }
   .Content{
     max-width: 140px;
-    max-height: 200px;
+    max-height: 180px;
     overflow: hidden;
     
   }
@@ -116,14 +115,13 @@
     align-items: center;
     flex-direction: column;
     height: 110px;
-    padding: 10px 10px;
+    padding: 30px 10px;
   }
 
   .Mega>.Title{
     display: flex;
     align-items: center;
-    flex-direction: column;
-    width: 20px;
+    width: 130px;
     height: 10px;
     font-size: 15px;
 

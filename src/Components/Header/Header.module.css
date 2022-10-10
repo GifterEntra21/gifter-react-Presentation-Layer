@@ -151,4 +151,16 @@ nav .pages:hover:before {
     }
 }
 
+@media screen and (min-width:330px) and (max-width: 386px){
+    nav a{
+        white-space: nowrap;
+        margin-left: 0.1rem;
+    }
+
+    li a{
+        display: flex;
+        max-width: fit-content;
+        margin-right: 1rem;
+    }
+}
 

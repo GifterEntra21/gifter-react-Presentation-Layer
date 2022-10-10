@@ -2,17 +2,19 @@ import React from "react";
 import Card from "../Components/Card/Card";
 import style from "./Presente.module.css"
 import Header from "../Components/Header/Header";
-import { useState, useEffect } from "react";
-import { GetAllGifts } from "../services/Api/ApiMethods"
+import { useState, useEffect, Redirect } from "react";
+import { GetGifts } from "../services/Api/ApiMethods"
 
 
-
-export default function Presente() {
+export default function PresentesRecomendados() {
 
     const [cards, SetCards] = useState();
 
     const GenerateCards = async () => {
-        const gifts = [await GetAllGifts()]
+        if (localStorage.getItem("profile") == null) {
+            return <Redirect to="/erro" />
+        }
+        const gifts = [await GetGifts()]
 
         const giftsObj = JSON.parse(gifts)
         console.log(giftsObj)
