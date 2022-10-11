@@ -13,7 +13,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Set />} />
                 <Route path="/presente" element={<Presente />} />
-                <Route path="/Reco" element={<PresentesRecomendados />} />
+                <Route path="/Reco/:profile" element={<PresentesRecomendados />}/>
                 <Route path="/erro" element={<Erro />} />
             </Routes>
 

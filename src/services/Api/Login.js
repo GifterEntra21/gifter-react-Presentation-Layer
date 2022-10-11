@@ -6,9 +6,9 @@ const LoginFn = async () => {
 
     try {
   
-      const response = await apiConfig.post("/api/Auth/login",  {
-          username: "string",
-          password: "string",
+      const response = await apiConfig.post("/Auth/Login",  {
+          username: "root",
+          password: "Y^#c8gxX#22g7Nh!@@qGM#44c",
         });
       const session2 = response.data;
   

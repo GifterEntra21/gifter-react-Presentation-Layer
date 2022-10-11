@@ -2,7 +2,7 @@ import { apiConfig } from "./apiConfig";
 
 export const GetAllGifts = async () => {
   try {
-    const req = await apiConfig.get('/AllGifts');
+    const req = await apiConfig.get('/Product/AllProducts');
     if (req.status < 201) {
       return JSON.stringify(req.data)
     } else {
@@ -13,18 +13,17 @@ export const GetAllGifts = async () => {
     console.log("Error");
   }
 }
+
 export const GetGifts = async (profile) => {
   try {
-    const req = await apiConfig.get('/Recommendation/RecommendGifts',{params:{request : profile}});
+    const req = await apiConfig.get('/Recommendation/RecommendGifts',{params:{request :profile}});
     if (req.status < 201) {
       return JSON.stringify(req.data)
     } else {
       console.log("tentando novamente")
-      return GetAllGifts()
+      return GetGifts()
     }
-  } catch (error) {
-    console.log("Error");
-  }
+  } catch (error) {console.log(error);}
 
   
 }

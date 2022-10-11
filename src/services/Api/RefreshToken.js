@@ -5,7 +5,7 @@ import { apiConfig } from "./apiConfig";
 const refreshTokenFn = async () => {
   const session = JSON.parse(localStorage.getItem("session"));
   try {
-    const response = await apiConfig.post("/api/Token/refresh", {
+    const response = await apiConfig.post("/Token/refresh", {
       refreshToken: session?.refreshToken,
       accessToken: session?.accessToken
     });
