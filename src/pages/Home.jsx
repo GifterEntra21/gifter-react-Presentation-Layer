@@ -6,14 +6,7 @@ import { Link } from 'react-router-dom';
 
 export default function Home() {
 
-    const [spinner, setSpinner] = useState(false);
-    const [waiting, setWaiting] = useState(false);
     const [inputData, setInputData] = useState("")
-
-    const eventHandler = () => {
-        setSpinner(spinner ? false : true)
-        setWaiting(waiting ? false : true)
-    }
 
     return (
         <div className={styles.wrapper}>
@@ -37,10 +30,8 @@ export default function Home() {
                 <input placeholder='@NomeDoPerfil' onChange={(e) => { setInputData(e.target.value) }} className={styles.input} />
 
                 <Link to={"/reco/" + inputData}>
-                    <button className={styles.button} onClick={() => eventHandler()} style={spinner ? { display: "none" } : {}} >Descobrir</button>
+                    <button className={styles.button}>Descobrir</button>
                 </Link>
-                <div className={spinner ? styles.spinner : styles.aaaaaaaa}></div>
-                <div className={waiting ? styles.waiting : styles.aaaaaaaa} style={waiting ? {} : { display: "none" }}>Isso pode levar alguns minutos...</div>
             </div>
             <div className={styles.photo}>
                 <img src={simbolo} alt="present.png" />

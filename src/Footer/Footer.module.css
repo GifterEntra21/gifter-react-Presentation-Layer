@@ -347,37 +347,6 @@
     }
 }
 
-@media screen and (width:912px) {
-    .innerFooter{
-        height: 77vh;
-    }
-
-    .names {
-        white-space: nowrap;
-        position: relative;
-        display: flex;
-        left: -8rem;
-    }
-
-    .iconsC{
-        display: flex;
-        position: relative;
-        left: -2.3rem;
-    }
-
-    .git{
-        position: relative;
-        top: 16rem;
-        right: 43rem;
-    }
-
-    .photoMembers>a>img {
-        display: flex;
-        position: relative;
-        margin-right: -1rem;
-        margin-left: none;
-    }
-}
 
 @media screen and (width:540px) {
     .innerFooter {
@@ -1300,7 +1269,7 @@
     }
 }
 
-@media screen and (min-width:900px) and (max-width:912px)  { 
+@media screen and (min-width:913px) and (max-width:949px)  { 
     .innerFooter {
         background-color: #ff712f;
         max-width: 100vw;
@@ -1308,6 +1277,10 @@
         display: flex;
         flex-direction: column;
 
+    }
+
+    .photoMembers {
+        gap: 10px;
     }
 
     .photoMembers>a>img{
@@ -1348,7 +1321,7 @@
     .git{
         display: flex;
         position: relative;
-        right: 45rem;
+        right: 40rem;
         top: 12rem;
     }
 }
@@ -1363,7 +1336,7 @@
     }
 
     .photoMembers {
-        gap: 5px;
+        gap: 20px;
     }
 
     .photoMembers>a>img{
@@ -1382,7 +1355,7 @@
         font-size:15px;
         position: relative;
         top: -1.1rem;
-        left: -6.5rem;
+        left: -7.9rem;
     }
 
     .iconsC {
@@ -1395,7 +1368,7 @@
         background-color: #007bad;
         position: relative;
         top: 1.5rem;
-        right: 2.4rem;
+        right: 3rem;
     }
     
     .git{

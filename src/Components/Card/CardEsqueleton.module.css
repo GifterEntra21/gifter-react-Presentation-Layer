@@ -1,0 +1,61 @@
+.Container {
+    width: fit-content;
+    min-width: fit-content;
+    transition: all 1.5s;
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+}
+
+.Content {
+    float: left;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 240px;
+    height: 300px;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.Content *{
+    background: linear-gradient(
+        120deg,
+        #e5e5e5 30%,
+        #f0f0f0 38%,
+        #f0f0f0 40%,
+        #e5e5e5 48%
+    );
+    background-size: 200% 100%;
+    background-position:100% 0;
+    animation: load 2s infinite;
+}
+
+@keyframes load{
+    100%{
+        background-position: -100% 0;
+    }
+}
+
+.Mega {
+    display: flex;
+    position: relative;
+    top: 220px;
+    width: 200px;
+    height: 60px;
+    background-color: #e5e5e5;
+    border-radius: 10px ; 
+}
+
+.text {
+    display: flex;
+    position: relative;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    width: 200px;
+    height: 170px;
+    top: -40px;
+}

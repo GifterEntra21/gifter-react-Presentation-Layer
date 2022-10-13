@@ -177,19 +177,6 @@
         display: none;
     }
 
-    .spinner {
-        display: flex;
-        position: relative;
-        left: 2rem;
-        top: 2rem;
-    }
-
-    .waiting {
-        display: flex;
-        position: relative;
-        left: 4rem;
-        top: 0.5rem;
-    }
 }
 
 @media screen and (width:820px) {
@@ -206,19 +193,6 @@
         margin-bottom: 10rem;
     }
 
-    .spinner {
-        display: flex;
-        position: relative;
-        left: 3rem;
-        top: -1rem;
-    }
-
-    .waiting {
-        display: flex;
-        position: relative;
-        left: 5rem;
-        top: -2.5rem;
-    }
 }
 
 @media screen and (width:768px) {
@@ -230,19 +204,6 @@
         margin-bottom: 9rem;
     }
 
-    .spinner {
-        display: flex;
-        position: relative;
-        left: 19rem;
-        top: -3rem;
-    }
-
-    .waiting {
-        display: flex;
-        position: relative;
-        left: 21rem;
-        top: -4.5rem;
-    }
 }
 
 @media screen and (width:1024px) {
@@ -259,19 +220,6 @@
         margin-bottom: 8rem;
     }
 
-    .spinner {
-        display: flex;
-        position: relative;
-        left: 3rem;
-        top: 1rem;
-    }
-
-    .waiting {
-        display: flex;
-        position: relative;
-        left: 5.5rem;
-        top: -0.3rem;
-    }
 }
 
 @media screen and (width:1280px) {
@@ -288,19 +236,6 @@
         margin-bottom: 1rem;
     }
 
-    .spinner {
-        display: flex;
-        position: relative;
-        left: 18rem;
-        top: 5rem;
-    }
-
-    .waiting {
-        display: flex;
-        position: relative;
-        left: 20rem;
-        top: 3.5rem;
-    }
 }
 
 @media screen and (width:912px) {
@@ -317,19 +252,6 @@
         margin-bottom: 7rem;
     }
 
-    .spinner {
-        display: flex;
-        position: relative;
-        left: 3rem;
-        top: 1.5rem;
-    }
-
-    .waiting {
-        display: flex;
-        position: relative;
-        left: 5.5rem;
-        top: 0.1rem;
-    }
 }
 
 @media screen and (width:540px) {
@@ -350,19 +272,6 @@
         top: 3rem;
     }
 
-    .spinner {
-        display: flex;
-        position: relative;
-        left: 3rem;
-        top: 3.5rem;
-    }
-
-    .waiting {
-        display: flex;
-        position: relative;
-        left: 5.5rem;
-        top: 2rem;
-    }
 }
 
 @media screen and (width:717px) {
@@ -385,19 +294,6 @@
         top: 3.5rem;
     }
 
-    .spinner {
-        display: flex;
-        position: relative;
-        left: 18rem;
-        top: 1.5rem;
-    }
-
-    .waiting {
-        display: flex;
-        position: relative;
-        left: 20rem;
-        top: 0.1rem;
-    }
 }
 
 @media screen and (width:360px) {
@@ -465,19 +361,6 @@
         display: none;
     }
 
-    .spinner {
-        display: flex;
-        position: relative;
-        left: 1.6rem;
-        top: 2rem
-    }
-
-    .waiting {
-        display: flex;
-        position:relative;
-        left: 4rem;
-        top: 0.5rem;
-    }
 }
 
 @media screen and (width:320px) {
@@ -587,19 +470,6 @@
         display: none;
     }
 
-    .spinner {
-        display: flex;
-        position: relative;
-        top: 3.5rem;
-        left: 0.7rem;
-    }
-
-    .waiting {
-        display: flex;
-        position: relative;
-        top: 2rem;
-        left: 2.5rem;
-    }
 }
 
 @media screen and (min-width:1390px) and (max-width:1406px)  {
@@ -664,19 +534,6 @@
         margin-bottom: 1rem;
     }
 
-    .spinner {
-        display: flex;
-        position: relative;
-        left: 18rem;
-        top: 5rem;
-    }
-
-    .waiting {
-        display: flex;
-        position: relative;
-        left: 20rem;
-        top: 3.5rem;
-    }
 }
 
 @media screen and (min-width:1200px) and (max-width:1279px)  {
@@ -693,19 +550,7 @@
         margin-bottom: 1rem;
     }
 
-    .spinner {
-        display: flex;
-        position: relative;
-        left: 18rem;
-        top: 5rem;
-    }
 
-    .waiting {
-        display: flex;
-        position: relative;
-        left: 20rem;
-        top: 3.5rem;
-    }
 }
 
 @media screen and (min-width:1150px) and (max-width:1199px)  { 
@@ -722,19 +567,6 @@
         margin-bottom: 8rem;
     }
 
-    .spinner {
-        display: flex;
-        position: relative;
-        left: 3rem;
-        top: 1rem;
-    }
-
-    .waiting {
-        display: flex;
-        position: relative;
-        left: 5.5rem;
-        top: -0.3rem;
-    }
 }
 
 @media screen and (min-width:1100px) and (max-width:1149px)  { 
@@ -751,19 +583,6 @@
         margin-bottom: 8rem;
     }
 
-    .spinner {
-        display: flex;
-        position: relative;
-        left: 3rem;
-        top: 1rem;
-    }
-
-    .waiting {
-        display: flex;
-        position: relative;
-        left: 5.5rem;
-        top: -0.3rem;
-    }
 }
 
 @media screen and (min-width:1025px) and (max-width:1099px)  { 
@@ -780,19 +599,6 @@
         margin-bottom: 8rem;
     }
 
-    .spinner {
-        display: flex;
-        position: relative;
-        left: 3rem;
-        top: 1rem;
-    }
-
-    .waiting {
-        display: flex;
-        position: relative;
-        left: 5.5rem;
-        top: -0.3rem;
-    }
 }
 
 @media screen and (min-width:1000px) and (max-width:1023px)  { 
@@ -809,19 +615,6 @@
         margin-bottom: 8rem;
     }
 
-    .spinner {
-        display: flex;
-        position: relative;
-        left: 3rem;
-        top: 1rem;
-    }
-
-    .waiting {
-        display: flex;
-        position: relative;
-        left: 5.5rem;
-        top: -0.3rem;
-    }
 }
 
 @media screen and (min-width:950px) and (max-width:999px)  { 
@@ -838,19 +631,6 @@
         margin-bottom: 7rem;
     }
 
-    .spinner {
-        display: flex;
-        position: relative;
-        left: 3rem;
-        top: 1.5rem;
-    }
-
-    .waiting {
-        display: flex;
-        position: relative;
-        left: 5.5rem;
-        top: 0.1rem;
-    }
 }
 
 @media screen and (min-width:913px) and (max-width:949px)  { 
@@ -867,19 +647,6 @@
         margin-bottom: 7rem;
     }
 
-    .spinner {
-        display: flex;
-        position: relative;
-        left: 3rem;
-        top: 1.5rem;
-    }
-
-    .waiting {
-        display: flex;
-        position: relative;
-        left: 5.5rem;
-        top: 0.1rem;
-    }
 }
 
 @media screen and (min-width:900px) and (max-width:911px)  { 
@@ -896,19 +663,6 @@
         margin-bottom: 7rem;
     }
 
-    .spinner {
-        display: flex;
-        position: relative;
-        left: 3rem;
-        top: 1.5rem;
-    }
-
-    .waiting {
-        display: flex;
-        position: relative;
-        left: 5.5rem;
-        top: 0.1rem;
-    }
 }
 
 @media screen and (min-width:850px) and (max-width:899px)  { 
@@ -925,19 +679,6 @@
         margin-bottom: 10rem;
     }
 
-    .spinner {
-        display: flex;
-        position: relative;
-        left: 3rem;
-        top: -1rem;
-    }
-
-    .waiting {
-        display: flex;
-        position: relative;
-        left: 5rem;
-        top: -2.5rem;
-    }
 }
 
 @media screen and (min-width:821px) and (max-width:849px)  {
@@ -954,19 +695,6 @@
         margin-bottom: 10rem;
     }
 
-    .spinner {
-        display: flex;
-        position: relative;
-        left: 3rem;
-        top: -1rem;
-    }
-
-    .waiting {
-        display: flex;
-        position: relative;
-        left: 5rem;
-        top: -2.5rem;
-    }
 }
 
 @media screen and (min-width:800px) and (max-width:819px)  {
@@ -988,16 +716,6 @@
         position: relative;
         top: 3rem;
     }
-
-    .spinner {
-        position: relative;
-        top: 1rem;
-    }
-
-    .waiting {
-        position: relative;
-        top: -0.4rem;
-    }
 }
 
 @media screen and (min-width:769px) and (max-width:799px)  {
@@ -1018,16 +736,6 @@
     .button {
         position: relative;
         top: 3rem;
-    }
-
-    .spinner {
-        position: relative;
-        top: 1rem;
-    }
-
-    .waiting {
-        position: relative;
-        top: -0.4rem;
     }
 }
 
@@ -1051,15 +759,6 @@
         top: 3rem;
     }
 
-    .spinner {
-        position: relative;
-        top: 1rem;
-    }
-
-    .waiting {
-        position: relative;
-        top: -0.4rem;
-    }
 }
 
 @media screen and (min-width:700px) and (max-width:716px)  {
@@ -1080,16 +779,6 @@
     .button {
         position: relative;
         top: 3rem;
-    }
-
-    .spinner {
-        position: relative;
-        top: 1rem;
-    }
-
-    .waiting {
-        position: relative;
-        top: -0.4rem;
     }
 }
 
@@ -1113,31 +802,6 @@
         top: 3rem;
     }
 
-    .spinner {
-        position: relative;
-        top: 1rem;
-    }
-
-    .waiting {
-        position: relative;
-        top: -0.4rem;
-    }
-}
-
-@media screen and (min-width:541px) and (max-width:576px)  {
-    .spinner {
-        display: flex;
-        position: relative;
-        left: 3rem;
-        top: 3.5rem;
-    }
-
-    .waiting {
-        display: flex;
-        position: relative;
-        left: 5rem;
-        top: 2rem;
-    }
 }
 
 @media screen and (min-width:500px) and (max-width:539px)  {
@@ -1160,19 +824,6 @@
         top: 3rem;
     }
 
-    .spinner {
-        display: flex;
-        position: relative;
-        left: 3rem;
-        top: 3.5rem;
-    }
-
-    .waiting {
-        display: flex;
-        position: relative;
-        left: 5rem;
-        top: 2rem;
-    }
 }
 
 
@@ -1234,20 +885,6 @@
     .photo {
         display: none;
     }
-
-    .spinner {
-        display: flex;
-        position: relative;
-        left: 1.6rem;
-        top: 2rem
-    }
-
-    .waiting {
-        display: flex;
-        position:relative;
-        left: 4rem;
-        top: 0.5rem;
-    }
 }
 
 @media screen and (min-width:415px) and (max-width:424px)  {
@@ -1307,19 +944,5 @@
 
     .photo {
         display: none;
-    }
-
-    .spinner {
-        display: flex;
-        position: relative;
-        left: 2rem;
-        top: 2rem;
-    }
-
-    .waiting {
-        display: flex;
-        position: relative;
-        left: 4rem;
-        top: 0.5rem;
     }
 }
