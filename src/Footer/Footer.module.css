@@ -68,7 +68,7 @@
     .innerFooter {
         background-color: #ff712f;
         max-width: 100vw;
-        height: 52vh;
+        height: 42vh;
         display: flex;
         flex-direction: column;
     }

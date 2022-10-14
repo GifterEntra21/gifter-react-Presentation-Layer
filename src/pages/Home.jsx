@@ -1,12 +1,21 @@
 import styles from './Home.module.css';
 import simbolo from "../images/simbolo.png";
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 
 export default function Home() {
 
     const [inputData, setInputData] = useState("")
+    const [inputError, setInputError] = useState(false)
+
+    function handleSubmit() {
+        setInputError(false);
+        if (inputData === "") {
+            setInputError(true);
+        } else {
+            window.location.href = "http://localhost:3000/reco/" + inputData
+        };
+    }
 
     return (
         <div className={styles.wrapper}>
@@ -27,12 +36,19 @@ export default function Home() {
                 <h5 className={styles.amount}>
                     Qual o @ do perfil presenteado?
                 </h5>
-                <input placeholder='@NomeDoPerfil' onChange={(e) => { setInputData(e.target.value) }} className={styles.input} />
 
-                <Link to={"/reco/" + inputData}>
-                    <button className={styles.button}>Descobrir</button>
-                </Link>
+                <input
+                    required
+                    tabIndex={1}
+                    placeholder='@NomeDoPerfil'
+                    onKeyUp={(e) => { e.code === "Enter" ? handleSubmit() : console.log() }}
+                    onChange={(e) => { setInputData(e.target.value) }}
+                    className={styles.input} 
+                />
+
+                <button className={styles.button} onClick={() => { handleSubmit() }}>Descobrir</button>
             </div>
+            <p className={inputError ? styles.message : styles.aaaaa} style={inputError ? {} : { display: "none" }}>Por favor digite um perfil.</p>
             <div className={styles.photo}>
                 <img src={simbolo} alt="present.png" />
             </div>
