@@ -686,7 +686,7 @@
 
 @media screen and (width:1366px){
     .innerFooter {
-        height: 58vh;
+        height: 64vh;
     }
 
     .photoMembers>a>img{
@@ -805,6 +805,10 @@
         display: flex;
         position: relative;
         left: -4rem;
+    }
+
+    .names{
+        white-space: nowrap;
     }
 }
 

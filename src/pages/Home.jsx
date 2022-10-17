@@ -43,7 +43,7 @@ export default function Home() {
                     placeholder='@NomeDoPerfil'
                     onKeyUp={(e) => { e.code === "Enter" ? handleSubmit() : console.log() }}
                     onChange={(e) => { setInputData(e.target.value) }}
-                    className={styles.input} 
+                    className={styles.input} style={inputError ? {"border-color":"red"} : {}}
                 />
 
                 <button className={styles.button} onClick={() => { handleSubmit() }}>Descobrir</button>

@@ -5,13 +5,16 @@ import Header from "../Components/Header/Header";
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from 'react-router-dom';
 import { GetGifts } from "../services/Api/ApiMethods"
+import CardEs from "../Components/Card/CardEsqueleton";
 
 export default function PresentesRecomendados() {
     const { profile } = useParams();
-    const [cards, SetCards] = useState();
+    const numbers = [1, 2, 3, 4, 5,6,7,8,9,10,11,12,13,14,15];
+    const listEsq = numbers.map((esq) => <CardEs key={esq}/>)
+    const [cards, SetCards] = useState([listEsq]);
     const navigate = useNavigate();
-    const GenerateCards = async () => {
 
+    const GenerateCards = async () => {
 
         if (profile === null) {
             return navigate('/erro');
@@ -28,6 +31,7 @@ export default function PresentesRecomendados() {
 
         SetCards(listItems);
     }
+
 
     useEffect(() => {
         GenerateCards();
