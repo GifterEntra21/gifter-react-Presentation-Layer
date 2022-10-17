@@ -796,24 +796,183 @@
         height: 30vh;
     }
 
-    .photoMembers{
-        gap: 30px;
+    .photoMembers>a>img{
+        position: relative;
+        left: 6rem;
+        width: none;
     }
 
     .names{
-        left: -170px;
+        left: -3rem;
     }
 
     .iconsC{
-        left: -4rem;
+        left: 2.5rem;
     }
 
     .git {
         display: flex;
         position: relative;
-        left: 20rem;
+        left: 15rem;
     }
 }
+
+@media screen and (min-width:1800px) and (max-width:1899px)  {
+    .innerFooter{
+        height: 30vh;
+    }
+
+    .photoMembers>a>img{
+        position: relative;
+        left: 6rem;
+        width: none;
+    }
+
+    .names{
+        left: -3rem;
+    }
+
+    .iconsC{
+        left: 2.5rem;
+    }
+
+    .git {
+        display: flex;
+        position: relative;
+        left: 15rem;
+    }
+}
+
+@media screen and (min-width:1700px) and (max-width:1799px)  {
+    .innerFooter{
+        height: 30vh;
+    }
+
+    .photoMembers>a>img{
+        position: relative;
+        left: 6rem;
+        width: none;
+    }
+
+    .names{
+        left: -3rem;
+    }
+
+    .iconsC{
+        left: 2.5rem;
+    }
+
+    .git {
+        display: flex;
+        position: relative;
+        left: 15rem;
+    }
+}
+
+@media screen and (min-width:1600px) and (max-width:1699px)  {
+    .innerFooter{
+        height: 34vh;
+    }
+
+    .photoMembers>a>img{
+        position: relative;
+        left: 6rem;
+        width: none;
+    }
+
+    .names{
+        left: -3rem;
+    }
+
+    .iconsC{
+        left: 2.5rem;
+    }
+
+    .git {
+        display: flex;
+        position: relative;
+        left: 10rem;
+    }
+}
+
+@media screen and (min-width:1500px) and (max-width:1599px)  {
+    .innerFooter{
+        height: 38vh;
+    }
+
+    .photoMembers>a>img{
+        position: relative;
+        left: 2rem;
+        width: none;
+    }
+
+    .names{
+        left: -8rem;
+    }
+
+    .iconsC{
+        left: -2rem;
+    }
+
+    .git {
+        display: flex;
+        position: relative;
+        left: 3rem;
+    }
+}
+
+@media screen and (min-width:1400px) and (max-width:1499px)  {
+    .innerFooter{
+        height: 38vh;
+    }
+
+    .photoMembers>a>img{
+        position: relative;
+        left: 2rem;
+        width: none;
+    }
+
+    .names{
+        left: -8rem;
+    }
+
+    .iconsC{
+        left: -2rem;
+    }
+
+    .git {
+        display: flex;
+        position: relative;
+        left: -1rem;
+    }
+}
+
+@media screen and (min-width:1390px) and (max-width:1399px)  {
+    .innerFooter{
+        height: 38vh;
+    }
+
+    .photoMembers>a>img{
+        position: relative;
+        left: 2rem;
+        width: none;
+    }
+
+    .names{
+        left: -8rem;
+    }
+
+    .iconsC{
+        left: -2rem;
+    }
+
+    .git {
+        display: flex;
+        position: relative;
+        left: -1rem;
+    }
+}
+
 @media screen and (min-width:1370px) and (max-width:1389px)  {
     .git {
         display: flex;
