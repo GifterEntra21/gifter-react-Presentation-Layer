@@ -793,7 +793,7 @@
 }
 @media screen and (min-width:1900px) and (max-width:1950px)  {
     .innerFooter{
-        height: 30vh;
+        height: 32vh;
     }
 
     .photoMembers>a>img{
@@ -819,7 +819,7 @@
 
 @media screen and (min-width:1800px) and (max-width:1899px)  {
     .innerFooter{
-        height: 30vh;
+        height: 32vh;
     }
 
     .photoMembers>a>img{
@@ -845,7 +845,7 @@
 
 @media screen and (min-width:1700px) and (max-width:1799px)  {
     .innerFooter{
-        height: 30vh;
+        height: 32vh;
     }
 
     .photoMembers>a>img{
@@ -871,7 +871,7 @@
 
 @media screen and (min-width:1600px) and (max-width:1699px)  {
     .innerFooter{
-        height: 34vh;
+        height: 38vh;
     }
 
     .photoMembers>a>img{
@@ -897,7 +897,7 @@
 
 @media screen and (min-width:1500px) and (max-width:1599px)  {
     .innerFooter{
-        height: 38vh;
+        height: 40vh;
     }
 
     .photoMembers>a>img{
@@ -933,6 +933,7 @@
     }
 
     .names{
+        white-space: nowrap;
         left: -8rem;
     }
 
@@ -949,7 +950,7 @@
 
 @media screen and (min-width:1390px) and (max-width:1399px)  {
     .innerFooter{
-        height: 38vh;
+        height: 45vh;
     }
 
     .photoMembers>a>img{
@@ -959,6 +960,7 @@
     }
 
     .names{
+        white-space: nowrap;
         left: -8rem;
     }
 
@@ -973,7 +975,11 @@
     }
 }
 
-@media screen and (min-width:1370px) and (max-width:1389px)  {
+@media screen and (min-width:1355px) and (max-width:1389px)  {
+    .names{
+        white-space: nowrap;
+    }
+
     .git {
         display: flex;
         position: relative;
@@ -982,6 +988,7 @@
 }
 
 @media screen and (min-width:1344px) and (max-width:1354px)  {
+    
     .git {
         display: flex;
         position: relative;
