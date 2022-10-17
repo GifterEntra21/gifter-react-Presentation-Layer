@@ -4,8 +4,10 @@ import styles from './Card.module.css'
 
 function Card({ title, imageurl, link }) {
     
-    return (
-        <a href={link} alt='' target="_blank">
+    
+
+    return (        
+        <a href={link} alt='' target="_blank" rel="noreferrer noopener" onClick = {() =>  console.log("foi")}>
             <div className={styles.Container}>
                 <div className={styles.Content}>
                     <div className={styles.Image}>

@@ -791,7 +791,29 @@
         display: none;
     }
 }
+@media screen and (min-width:1900px) and (max-width:1950px)  {
+    .innerFooter{
+        height: 30vh;
+    }
 
+    .photoMembers{
+        gap: 30px;
+    }
+
+    .names{
+        left: -170px;
+    }
+
+    .iconsC{
+        left: -4rem;
+    }
+
+    .git {
+        display: flex;
+        position: relative;
+        left: 20rem;
+    }
+}
 @media screen and (min-width:1370px) and (max-width:1389px)  {
     .git {
         display: flex;

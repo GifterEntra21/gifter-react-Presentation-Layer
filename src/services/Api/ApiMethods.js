@@ -27,3 +27,18 @@ export const GetGifts = async (profile) => {
 
   
 }
+
+export const SetClicks = async (productID) => {
+  try {
+    const req = await apiConfig.post('/Product/ClickPlus',{productID});
+    if (req.status < 201) {
+      console.log(JSON.stringify(req.data))
+      return JSON.stringify(req.data)
+    } else {
+      console.log("tentando novamente")
+      return SetClicks(productID)
+    }
+  } catch (error) {console.log(error);}
+
+  
+}
