@@ -17,19 +17,24 @@ export default function PresentesRecomendados() {
     const GenerateCards = async () => {
 
         if (profile === null) {
-            return navigate('/erro');
+            navigate('/');
         }
 
         const gifts = [await GetGifts(profile)]
+        try {
+            const giftsObj = JSON.parse(gifts)
 
-
-        const giftsObj = JSON.parse(gifts)
-
-        const listItems = giftsObj.map((gift) =>
-            <Card key={gift.id} title={gift.name} imageurl={gift.image} link={gift.shopURL}></Card>
-        );
-
-        SetCards(listItems);
+            const listItems = giftsObj.map((gift) =>
+                <Card key={gift.id} id={gift.id} title={gift.name} imageurl={gift.image} link={gift.shopURL}></Card>
+            );
+    
+            SetCards(listItems);
+        } catch (error) {
+            
+            alert("Erro no servidor, o perfil deve ter postagens públicas")
+            return navigate('/');
+        }
+       
     }
 
 

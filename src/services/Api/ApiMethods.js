@@ -1,3 +1,4 @@
+// import {useNavigate} from "react-router-dom";
 import { apiConfig } from "./apiConfig";
 
 export const GetAllGifts = async () => {
@@ -15,24 +16,26 @@ export const GetAllGifts = async () => {
 }
 
 export const GetGifts = async (profile) => {
+
+
   try {
     const req = await apiConfig.get('/Recommendation/RecommendGifts',{params:{request :profile}});
     if (req.status < 201) {
       return JSON.stringify(req.data)
-    } else {
-      console.log("tentando novamente")
+    } else {      
+      console.log("tentando novamente")      
       return GetGifts()
     }
-  } catch (error) {console.log(error);}
+  } catch (error) {console.log("cacth gifts");}
 
   
 }
 
 export const SetClicks = async (productID) => {
   try {
-    const req = await apiConfig.post('/Product/ClickPlus',{productID});
+    const id = productID;
+    const req = await apiConfig.post('/Product/ClickPlus',{request:id});
     if (req.status < 201) {
-      console.log(JSON.stringify(req.data))
       return JSON.stringify(req.data)
     } else {
       console.log("tentando novamente")

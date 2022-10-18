@@ -3,7 +3,7 @@ import Card from "../Components/Card/Card";
 import style from "./Presente.module.css"
 import Header from "../Components/Header/Header";
 import { useState, useEffect } from "react";
-import { GetAllGifts,SetClicks } from "../services/Api/ApiMethods"
+import { GetAllGifts} from "../services/Api/ApiMethods"
 import CardEs from "../Components/Card/CardEsqueleton";
 export default function Presente() {
 
@@ -17,7 +17,7 @@ export default function Presente() {
         const giftsObj = JSON.parse(gifts)
         console.log(giftsObj)
         const listItems = giftsObj.map((gift) =>
-            <Card key={gift.id} title={gift.name} imageurl={gift.image} link={gift.shopURL}></Card>
+            <Card key={gift.id} id= {gift.id}title={gift.name} imageurl={gift.image} link={gift.shopURL}></Card>
         );
 
         SetCards(listItems);

@@ -59,3 +59,63 @@
     height: 170px;
     top: -40px;
 }
+
+@media screen and (max-width:562px) {
+    .Container {
+        width: fit-content;
+        height: fit-content;
+      }
+      .Content{
+        max-width: 140px;
+        max-height: 200px;
+        overflow: hidden;
+        
+      }
+    
+      .Mega{
+        display: flex;
+        position: relative;
+        top: 10px;
+        width: 130px;
+        height: 60px;
+        background-color: #e5e5e5;
+        border-radius: 10px ; 
+      }
+    
+      .text{
+        display: flex;
+        position: relative;
+        background-color: #e5e5e5;
+        border-radius: 10px;
+        width: 130px;
+        height: 50px;
+        top: 20px;
+      }
+}
+
+@media screen and (max-width:1024px) {
+    .Container {
+        width: fit-content;
+        height: fit-content;
+      }
+      .Content{
+        max-width: 140px;
+        max-height: 180px;
+        overflow: hidden;
+        
+      }
+    
+      .Mega{
+        display: flex;
+        width: 130px;
+        height: 110px;
+        top:20px;
+      }
+    
+      .text{
+        display: flex;
+        width: 130px;
+        height: 10px;
+        top: 30px;
+      }
+  }
