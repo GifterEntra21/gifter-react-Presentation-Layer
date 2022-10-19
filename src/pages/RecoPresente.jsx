@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import { useNavigate, useParams } from 'react-router-dom';
 import { GetGifts } from "../services/Api/ApiMethods"
 import CardEs from "../Components/Card/CardEsqueleton";
+import ProgressBar from "../Components/ProgressBar/ProgressBar";
 
 export default function PresentesRecomendados() {
     const { profile } = useParams();
@@ -14,6 +15,15 @@ export default function PresentesRecomendados() {
     const [cards, SetCards] = useState([listEsq]);
     const navigate = useNavigate();
 
+    const [completed, setCompleted] = useState(0);
+    useEffect(() => {a()
+    }, [completed]);
+    function a(){
+        if (completed < 100) {
+            setTimeout(() => setCompleted(completed + 1), 1000)
+        }
+        
+    }
     const GenerateCards = async () => {
 
         if (profile === null) {
@@ -31,8 +41,8 @@ export default function PresentesRecomendados() {
             SetCards(listItems);
         } catch (error) {
             
-            alert("Erro no servidor, o perfil deve ter postagens públicas")
-            return navigate('/');
+            // alert("Erro no servidor, o perfil deve ter postagens públicas")
+            // return navigate('/');
         }
        
     }
@@ -46,7 +56,9 @@ export default function PresentesRecomendados() {
 
         <div className={style.wrapper}>
             <Header />
+            
             <div className={style.cardWrapper}>
+                <ProgressBar bgcolor={"#6a1b9a"} completed={completed} />
                 {cards}
             </div>
         </div>

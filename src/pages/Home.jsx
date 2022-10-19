@@ -3,11 +3,13 @@ import simbolo from "../images/simbolo.png";
 import { useState } from 'react';
 
 
+
 export default function Home() {
 
     const [inputData, setInputData] = useState("")
     const [inputError, setInputError] = useState(false)
 
+  
     function handleSubmit() {
         setInputError(false);
         if (inputData === "") {
@@ -36,7 +38,6 @@ export default function Home() {
                 <h5 className={styles.amount}>
                     Qual o @ do perfil presenteado?
                 </h5>
-
                 <input
                     required
                     tabIndex={1}
