@@ -6,13 +6,32 @@ import { useState, useEffect } from "react";
 import { useNavigate, useParams } from 'react-router-dom';
 import { GetGifts } from "../services/Api/ApiMethods"
 import CardEs from "../Components/Card/CardEsqueleton";
+import ProgressBar from "../Components/ProgressBar/ProgressBar";
 
 export default function PresentesRecomendados() {
     const { profile } = useParams();
-    const numbers = [1, 2, 3, 4, 5,6,7,8,9,10,11,12,13,14,15];
-    const listEsq = numbers.map((esq) => <CardEs key={esq}/>)
+    const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+    const listEsq = numbers.map((esq) => <CardEs key={esq} />)
     const [cards, SetCards] = useState([listEsq]);
+    const [completed, setCompleted] = useState(0);
     const navigate = useNavigate();
+
+    let timer;
+    useEffect(() => {
+        if (completed < 100) {
+            timer = setTimeout(() => {
+                setCompleted(completed + 1)
+            }, 1000);
+        }
+        return() => {
+            clearTimeout(timer)
+        }
+    }, [completed]);
+
+    useEffect(() => {
+        GenerateCards();
+    }, []);
+
 
     const GenerateCards = async () => {
 
@@ -26,27 +45,27 @@ export default function PresentesRecomendados() {
 
             const listItems = giftsObj.map((gift) =>
                 <Card key={gift.id} id={gift.id} title={gift.name} imageurl={gift.image} link={gift.shopURL}></Card>
-            );
-    
+            );            
+            setCompleted(100)
+            clearTimeout(timer)
             SetCards(listItems);
         } catch (error) {
-            
+
             alert("Erro no servidor, o perfil deve ter postagens públicas")
             return navigate('/');
         }
-       
+
     }
 
 
-    useEffect(() => {
-        GenerateCards();
-    }, []);
+
 
     return (
 
         <div className={style.wrapper}>
             <Header />
             <div className={style.cardWrapper}>
+                <ProgressBar bgcolor={"#6a1b9a"} completed={completed} />
                 {cards}
             </div>
         </div>
