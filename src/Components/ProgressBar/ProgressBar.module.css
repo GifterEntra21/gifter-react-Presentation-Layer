@@ -3,8 +3,8 @@
     width: 100%;
     background-color: #e0e0de;
     border-radius: 2rem;
-    margin-right: 7.3rem;
-    margin-left: 1.3rem;
+    margin-right: 3rem;
+    margin-left: 3.2rem;
 }
 
 .fillerStyles {
@@ -21,8 +21,20 @@
     padding: 5;
     color: #fcfcfc;
     font-weight: bold;
+    padding-right: 0.5rem;
 }
-
+.endStyle{
+    visibility: hidden;
+    overflow: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 2s, opacity 1.45s linear;
+    height: 20;
+    width: 100%;
+    background-color: #e0e0de;
+    border-radius: 2rem;
+    margin-right: 3rem;
+    margin-left: 3.2rem;
+}
 :root{
     --completed:0%;
 }

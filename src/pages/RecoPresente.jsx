@@ -39,7 +39,7 @@ export default function PresentesRecomendados() {
 
         if (profile === null) {
             await Swal.fire({
-                title:"Erro interno no servidor",
+                title:"Erro no servidor",
                 html:"Lembre-se que o perfil deve ser público e ter postagens",
                 icon:'error'
 

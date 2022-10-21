@@ -40,7 +40,7 @@ export default function Home() {
                 <input
                     required
                     tabIndex={1}
-                    placeholder='@NomeDoPerfil'
+                    placeholder='@nomedoperfil'
                     onKeyUp={(e) => { e.code === "Enter" ? handleSubmit() : console.log() }}
                     onChange={(e) => { setInputData(e.target.value) }}
                     className={styles.input} style={inputError ? {"border-color":"red"} : {}}
