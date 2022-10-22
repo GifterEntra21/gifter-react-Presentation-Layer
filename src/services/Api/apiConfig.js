@@ -4,7 +4,7 @@ import { memoizedRefreshToken } from "../Api/RefreshToken";
 import { memoizedLogin } from "../Api/Login";
 
 export const apiConfig = axios.create({
-  baseURL: "https://localhost:7008/api",
+  baseURL: "https://gifterserver.azurewebsites.net/api",
 });
 
 apiConfig.interceptors.request.use(

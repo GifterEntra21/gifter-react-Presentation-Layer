@@ -1,19 +1,20 @@
 import styles from './Home.module.css';
 import simbolo from "../images/simbolo.png";
 import { useState } from 'react';
-
+import { useNavigate } from 'react-router-dom';
 
 export default function Home() {
 
     const [inputData, setInputData] = useState("")
     const [inputError, setInputError] = useState(false)
-
+    const navigate = useNavigate();
+    
     function handleSubmit() {
         setInputError(false);
         if (inputData === "") {
             setInputError(true);
         } else {
-            window.location.href = "http://localhost:3000/reco/" + inputData
+            navigate("/reco/" + inputData)
         };
     }
 
