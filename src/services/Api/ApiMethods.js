@@ -19,7 +19,7 @@ export const GetGifts = async (profile) => {
 
 
   try {
-    const req = await apiConfig.get('/Recommendation/RecommendGifts',{params:{request :profile}});
+    const req = await apiConfig.get('/Recommendation/RecommendGifts',{params:{profile}});
     if (req.status < 201) {
       return JSON.stringify(req.data)
     } else {      
@@ -34,7 +34,7 @@ export const GetGifts = async (profile) => {
 export const SetClicks = async (productID) => {
   try {
     const id = productID;
-    const req = await apiConfig.post('/Product/ClickPlus',{request:id});
+    const req = await apiConfig.post('/Product/ClickPlus',{id});
     if (req.status < 201) {
       return JSON.stringify(req.data)
     } else {
