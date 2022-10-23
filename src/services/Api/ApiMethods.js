@@ -34,7 +34,7 @@ export const GetGifts = async (profile) => {
 export const SetClicks = async (productID) => {
   try {
     const id = productID;
-    const req = await apiConfig.post('/Product/ClickPlus',{id});
+    const req = await apiConfig.post('/Product/ClickPlus',{request:id});
     if (req.status < 201) {
       return JSON.stringify(req.data)
     } else {
