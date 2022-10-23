@@ -19,7 +19,7 @@ export const GetGifts = async (profile) => {
 
 
   try {
-    const req = await apiConfig.get('/Recommendation/RecommendGifts',{params:{profile}});
+    const req = await apiConfig.get('/Recommendation/RecommendGifts',{params:{request:profile}});
     if (req.status < 201) {
       return JSON.stringify(req.data)
     } else {      
