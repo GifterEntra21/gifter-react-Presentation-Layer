@@ -14,7 +14,6 @@ function App() {
                 <Route path="/presente" element={<Presente />} />
                 <Route path="/Reco/:profile" element={<PresentesRecomendados />}/>
             </Routes>
-
         </Router>
     )
 }

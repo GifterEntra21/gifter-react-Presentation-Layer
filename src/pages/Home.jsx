@@ -49,7 +49,7 @@ export default function Home() {
 
                 <button className={styles.button} onClick={() => { handleSubmit() }}>Descobrir</button>
             </div>
-            <p className={inputError ? styles.message : styles.aaaaa} style={inputError ? {} : { display: "none" }}>Por favor digite um perfil.</p>
+            <p className={inputError ? styles.message : styles.aaaaa} style={inputError ? {} : { display: "none" }}>Por favor, digite um perfil.</p>
             <div className={styles.photo}>
                 <img src={simbolo} alt="present.png" />
             </div>
