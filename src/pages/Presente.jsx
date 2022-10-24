@@ -27,7 +27,7 @@ export default function Presente() {
         } catch (error) {
             await Swal.fire({
                 title:"Erro interno no servidor",
-                html:"Tente novamente mais tarde",
+                html:"Tente novamente mais tarde.",
                 icon:'error'
 
             })         
