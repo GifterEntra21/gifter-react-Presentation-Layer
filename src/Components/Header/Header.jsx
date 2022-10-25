@@ -4,7 +4,7 @@ import logo from "../../images/logo.png";
 export default function Header() {
     let flag = false
 
-    if (window.location.href === "https://gifter-e21.netlify.app/presente" && "https://gifter-e21.netlify.app/reco/" ) {
+    if (window.location.href.includes("https://gifter-e21.netlify.app/presente" && "https://gifter-e21.netlify.app/reco/")) {
       flag=true
     }
     return (
