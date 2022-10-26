@@ -17,8 +17,8 @@ export default function Home() {
         } else {
             Swal.fire({
                 title:"Ops! Algo não correu bem",
-                html: 'Infelizmente o projeto tem recursos limitados, nossa assinatura Azure acabou por isso não será possível realizar o procedimento',
-                confirmButtonText:'Tentar novamente!',
+                html: 'Infelizmente o projeto tem recursos limitados, nossa assinatura Azure acabou, por isso não será possível realizar a análise',
+                confirmButtonText:'Ok',
                 icon:'warning'
             })    
         };
