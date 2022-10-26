@@ -27,7 +27,7 @@ export default function Presente() {
         } catch (error) {
             await  Swal.fire({
                 title:"Ops! Algo não correu bem",
-                html: 'Infelizmente o projeto tem recursos limitados, nossa assinatura Azure acabou, por isso não será possível realizar a análise',
+                html: 'Infelizmente o projeto tem recursos limitados, nossa assinatura Azure acabou, por isso não será possível mostrar todos os produtos',
                 confirmButtonText:'Ok',
                 icon:'warning'
             })             
