@@ -25,12 +25,12 @@ export default function Presente() {
             );            
             SetCards(listItems);
         } catch (error) {
-            await Swal.fire({
-                title:"Erro interno no servidor",
-                html:"Tente novamente mais tarde.",
-                icon:'error'
-
-            })         
+            await  Swal.fire({
+                title:"Ops! Algo não correu bem",
+                html: 'Infelizmente o projeto tem recursos limitados, nossa assinatura Azure acabou, por isso não será possível realizar a análise',
+                confirmButtonText:'Ok',
+                icon:'warning'
+            })             
             
             return navigate('/');
         }
