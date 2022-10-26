@@ -2,6 +2,7 @@ import styles from './Home.module.css';
 import simbolo from "../images/simbolo.png";
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2'
 
 export default function Home() {
 
@@ -14,7 +15,12 @@ export default function Home() {
         if (inputData === "") {
             setInputError(true);
         } else {
-            navigate("/reco/" + inputData)
+            await Swal.fire({
+                title:"Ops! Algo não correu bem",
+                html: 'Infelizmente o projeto tem recursos limitados, nossa assinatura Azure acabou por isso não será possível realizar o procedimento',
+                confirmButtonText:'Tentar novamente!',
+                icon:'warning'
+            })    
         };
     }
 
