@@ -21,12 +21,14 @@ export const GetGifts = async (profile) => {
   try {
     const req = await apiConfig.get('/Recommendation/RecommendGifts',{params:{request:profile}});
     if (req.status < 201) {
-      return JSON.stringify(req.data)
+      return JSON.stringify(req)
     } else {      
       console.log("tentando novamente")      
       return GetGifts()
     }
-  } catch (error) {console.log("cacth gifts");}
+  } catch (error) {
+    console.log("cacth gifts");
+  }
 
   
 }

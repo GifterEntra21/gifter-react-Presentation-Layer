@@ -4,7 +4,7 @@ import { memoizedRefreshToken } from "../Api/RefreshToken";
 import { memoizedLogin } from "../Api/Login";
 
 export const apiConfig = axios.create({
-  baseURL: "https://gifterserver.azurewebsites.net/api",
+  baseURL: "https://localhost:7008/api",
 });
 
 apiConfig.interceptors.request.use(
@@ -29,9 +29,8 @@ apiConfig.interceptors.response.use(
 
 
     const config = error?.config;
-    const session = JSON.parse(localStorage.getItem("session"))
     //console.log(session)
-    if (error?.response?.status === 401 && !config?.sent && session === null) {
+    if (error?.response?.status === 401 && !config?.sent) {
       config.sent = true;
       const result = await memoizedLogin();
       if (result?.accessToken) {

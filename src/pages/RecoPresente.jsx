@@ -39,19 +39,20 @@ export default function PresentesRecomendados() {
 
         if (profile === null) {
             await Swal.fire({
-                title:"Erro no servidor",
-                html:"Lembre-se que o perfil deve ser público e possuir publicações.",
-                icon:'error'
-
-            })          
+                title:"Não conseguimos concluir a análise do perfil",
+                html: 'Fique tranquilo, é só tentar novamente. Lembre-se que o perfil deve ser público e possuir publicações!',
+                confirmButtonText:'Tentar novamente!',
+                icon:'warning'
+            })    
             return navigate('/');
         }
 
         const gifts = [await GetGifts(profile)]
         try {
-            const giftsObj = JSON.parse(gifts)
-
-            const listItems = giftsObj.map((gift) =>
+            const giftsObj = JSON.parse(gifts)     
+            
+                        
+            const listItems = giftsObj.data.map((gift) =>
                 <Card key={gift.id} id={gift.id} title={gift.name} imageurl={gift.image} link={gift.shopURL}></Card>
             );            
             setCompleted(100)
@@ -59,9 +60,10 @@ export default function PresentesRecomendados() {
         } catch (error) {
             setCompleted(0);
             await Swal.fire({
-                title:"Erro interno no servidor",
-                html:"Lembre-se que o perfil deve ser público e possuir publicações.",
-                icon:'error'
+                title:"Não conseguimos concluir a análise do perfil",
+                html: 'Fique tranquilo, é só tentar novamente. Lembre-se que o perfil deve ser público e possuir publicações!',
+                confirmButtonText:'Tentar novamente!',
+                icon:'warning'
 
             })          
             return navigate('/');
